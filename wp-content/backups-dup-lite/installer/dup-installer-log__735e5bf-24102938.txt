@@ -1,6 +1,6 @@
 ********************************************************************************
 * DUPLICATOR LITE: Install-Log
-* STEP-0 START @ 10:35:05
+* STEP-0 START @ 12:47:51
 * NOTICE: Do NOT post to public sites or forums!!
 ********************************************************************************
 PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
@@ -78,7 +78,7 @@ PLUGIN [SLUG:db.php                                            ][ON:false]  db.p
 PLUGIN [SLUG:object-cache.php                                  ][ON:false]  object-cache.php
 
 ********************************************************************************
-LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.11157]  MESSAGE:END RENDER PAGE
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.10044]  MESSAGE:END RENDER PAGE
 LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
 
 -------------------------
@@ -88,13 +88,13 @@ AJAX ACTION [sparam_s1] SUCCESS
 
 LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
 STEP ACTION: "on-validate"
-LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.04253]  MESSAGE:END RENDER PAGE
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.07120]  MESSAGE:END RENDER PAGE
 LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
 
 -------------------------
 AJAX ACTION [validate] START
 START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
-LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Archive Check" RESULT: passed
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Archive Check" RESULT: passed
 
 START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
@@ -112,13 +112,13 @@ START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
 LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
 
 START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
-LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Manual extraction detected" RESULT: good
 
 START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
-LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Database Only" RESULT: skip
 
 START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
-LOG-TIME[DELTA:   0.00130]  MESSAGE:TEST "Package Age" RESULT: good
+LOG-TIME[DELTA:   0.00095]  MESSAGE:TEST "Package Age" RESULT: good
 
 START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
 LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Package Size" RESULT: good
@@ -130,34 +130,34 @@ START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supp
 LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
 
 START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
-LOG-TIME[DELTA:   0.00042]  MESSAGE:TEST "Siteground" RESULT: skip
+LOG-TIME[DELTA:   0.00027]  MESSAGE:TEST "Siteground" RESULT: skip
 
 START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
 --------------------------------------
 PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
 --------------------------------------
-LOG-TIME[DELTA:   0.01352]  MESSAGE:TEST "Addon Sites" RESULT: good
+LOG-TIME[DELTA:   0.02303]  MESSAGE:TEST "Addon Sites" RESULT: good
 
 START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
-LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "Wordfence" RESULT: good
+LOG-TIME[DELTA:   0.00039]  MESSAGE:TEST "Wordfence" RESULT: good
 
 START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
 LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
 
 START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
-LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
 
 START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Open Base" RESULT: good
 
 START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
-LOG-TIME[DELTA:   0.00028]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
 
 START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Extensions" RESULT: good
 
 START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
-LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
 
 START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
 LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
@@ -166,43 +166,43 @@ START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Timeout" RESULT: good
 
 START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
-LOG-TIME[DELTA:   0.00987]  MESSAGE:TEST "Disk Space" RESULT: good
+LOG-TIME[DELTA:   0.02032]  MESSAGE:TEST "Disk Space" RESULT: good
 
 START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
-LOG-TIME[DELTA:   0.00960]  MESSAGE:TEST "Permissions: General" RESULT: passed
+LOG-TIME[DELTA:   0.01119]  MESSAGE:TEST "Permissions: General" RESULT: passed
 
 START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
-LOG-TIME[DELTA:   0.00009]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+LOG-TIME[DELTA:   0.00015]  MESSAGE:TEST "Permissions: Configs Files " RESULT: hard warning
 
 START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
 LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Host Name" RESULT: passed
 
 START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
-LOG-TIME[DELTA:   0.00026]  MESSAGE:TEST "Host Connection" RESULT: passed
+LOG-TIME[DELTA:   0.00018]  MESSAGE:TEST "Host Connection" RESULT: passed
 
 START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
-LOG-TIME[DELTA:   0.00125]  MESSAGE:TEST "Database Version" RESULT: passed
+LOG-TIME[DELTA:   0.00172]  MESSAGE:TEST "Database Version" RESULT: passed
 
 START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
-LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Create New Database" RESULT: skip
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Create New Database" RESULT: skip
 
 START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
-LOG-TIME[DELTA:   0.00107]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+LOG-TIME[DELTA:   0.00118]  MESSAGE:TEST "Database Engine Support" RESULT: passed
 
 START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
-LOG-TIME[DELTA:   0.00192]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+LOG-TIME[DELTA:   0.00078]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
 
 START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
-LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
 
 START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Manual Table Check" RESULT: skip
 
 START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
-LOG-TIME[DELTA:   0.00261]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: passed
+LOG-TIME[DELTA:   0.00231]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: passed
 
 START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
-LOG-TIME[DELTA:   0.00331]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+LOG-TIME[DELTA:   0.00181]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
 
 START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
 DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
@@ -229,25 +229,25 @@ TRACE[7] CLASS___: DUPX_Validation_manager->getValidateData FILE: /Applications/
 TRACE[8] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
 TRACE[9] CLASS___: DUPX_Ctrl_ajax::controller FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/main.installer.php[60]
 
-LOG-TIME[DELTA:   0.04910]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+LOG-TIME[DELTA:   0.07009]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
 
 START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
-LOG-TIME[DELTA:   0.00037]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+LOG-TIME[DELTA:   0.00043]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
 
 START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
 LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
 
 START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
-LOG-TIME[DELTA:   0.00086]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+LOG-TIME[DELTA:   0.00082]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
 
 START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
 LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: hard warning
 
 START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
-LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
 
 START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
-LOG-TIME[DELTA:   0.00030]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: passed
+LOG-TIME[DELTA:   0.00058]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: soft warning
 
 START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
 LOG-TIME[DELTA:   0.00011]  MESSAGE:TEST "Prefix too long" RESULT: passed
@@ -257,6 +257,7 @@ LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Database cleanup" RESULT: skip
 
 
 CTRL PARAMS AFTER VALIDATION
+HTACCESS ISN\'T READABLE SO SET noting ON ht_config PARAM
 AJAX ACTION [validate] SUCCESS
 -------------------------
 
@@ -284,7 +285,7 @@ PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
 --------------------------------------
 ********************************************************************************
 * DUPLICATOR LITE: Install-Log
-* STEP-1 START @ 10:35:47
+* STEP-1 START @ 12:48:11
 * NOTICE: Do NOT post to public sites or forums!!
 ********************************************************************************
 USER INPUTS
@@ -313,7 +314,7 @@ SAFE MODE___________: 0
 LOGGING_____________: 1
 ZIP THROTTLING______: false
 WP CONFIG___________: "modify"
-HTACCESS CONFIG_____: "new"
+HTACCESS CONFIG_____: "nothing"
 OTHER CONFIG________: "new"
 FILE TIME___________: "current"
 ********************************************************************************
@@ -342,7 +343,7 @@ MAINTENANCE MODE ENABLE
 *** CREATE FOLDER AND PERMISSION PREPARE
 FOLDER PREPARE DONE
 ARCHIVE OFFSET 0
-CHUNK COMPLETE - RUNTIME: 5.0080 sec. - Files processed: 6,908 of 16,308
+CHUNK COMPLETE - RUNTIME: 5.0072 sec. - Files processed: 5,935 of 16,308
 AJAX ACTION [extract] SUCCESS
 -------------------------
 
@@ -351,11 +352,11 @@ LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Cor
 -------------------------
 AJAX ACTION [extract] START
 MAINTENANCE MODE ENABLE
-ARCHIVE OFFSET 6908
+ARCHIVE OFFSET 5935
 --------------------------------------
 PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
 --------------------------------------
-CHUNK COMPLETE - RUNTIME: 5.0085 sec. - Files processed: 12,812 of 16,308
+CHUNK COMPLETE - RUNTIME: 5.0072 sec. - Files processed: 10,856 of 16,308
 AJAX ACTION [extract] SUCCESS
 -------------------------
 
@@ -364,15 +365,30 @@ LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Cor
 -------------------------
 AJAX ACTION [extract] START
 MAINTENANCE MODE ENABLE
-ARCHIVE OFFSET 12812
+ARCHIVE OFFSET 10856
 --------------------------------------
 PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
 --------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0141 sec. - Files processed: 15,646 of 16,308
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 15646
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+FILE EXTRACTION ERROR: .gitignore | MSG:ZipArchive::extractTo(/Applications/XAMPP/xamppfiles/htdocs/landingpage//.gitignore): Failed to open stream: Permission denied
+
 FILE EXTRACTION: done processing last file in list of 16915
 
 EXTRACTION: ZIP CHUNKING >>> DONE
 
-EXTRACTION COMPLETE @ 10:36:02 - RUNTIME: 16.2013 sec. - Files processed: 16,308 of 16,308
+EXTRACTION COMPLETE @ 12:48:29 - RUNTIME: 19.9510 sec. - Files processed: 16,308 of 16,308
 AJAX ACTION [extract] SUCCESS
 -------------------------
 
@@ -386,7 +402,7 @@ ADD PREFIX META MAP ID 0 lpb_
 
 ********************************************************************************
 * DUPLICATOR LITE: INSTALL-LOG
-* STEP-2 START @ 10:36:02
+* STEP-2 START @ 12:48:29
 * NOTICE: Do NOT post to public sites or forums!!
 ********************************************************************************
 USER INPUTS
@@ -469,10 +485,59 @@ DATABASE-ENVIRONMENT
 MYSQL VERSION:	This Server: 10.4.28 -- Build Server: 10.6.19
 FILE SIZE:	dup-database__[HASH].sql (3.79MB)
 TIMEOUT:	5000
-MAXPACK:	1048576
+MAXPACK:	268435456
 SQLMODE-GLOBAL:	STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
 DROP ALL TABLES
+DROP TABLE lpb_actionscheduler_actions
+DROP TABLE lpb_actionscheduler_claims
+DROP TABLE lpb_actionscheduler_groups
+DROP TABLE lpb_actionscheduler_logs
+DROP TABLE lpb_blc_filters
+DROP TABLE lpb_blc_instances
+DROP TABLE lpb_blc_links
+DROP TABLE lpb_blc_synch
+DROP TABLE lpb_commentmeta
+DROP TABLE lpb_comments
+DROP TABLE lpb_duplicator_packages
+DROP TABLE lpb_ewwwio_images
+DROP TABLE lpb_ewwwio_queue
+DROP TABLE lpb_fsmpt_email_logs
+DROP TABLE lpb_links
+DROP TABLE lpb_options
+DROP TABLE lpb_postmeta
+DROP TABLE lpb_posts
+DROP TABLE lpb_rank_math_404_logs
+DROP TABLE lpb_rank_math_analytics_gsc
+DROP TABLE lpb_rank_math_analytics_inspections
+DROP TABLE lpb_rank_math_analytics_objects
+DROP TABLE lpb_rank_math_internal_links
+DROP TABLE lpb_rank_math_internal_meta
+DROP TABLE lpb_rank_math_redirections
+DROP TABLE lpb_rank_math_redirections_cache
+DROP TABLE lpb_rcb_asset_seo_redirect
+DROP TABLE lpb_rcb_blocker_thumbnails
+DROP TABLE lpb_rcb_consent_decision
+DROP TABLE lpb_rcb_consent_ip
+DROP TABLE lpb_rcb_consent_tcf_string
+DROP TABLE lpb_rcb_consent_url
+DROP TABLE lpb_rcb_consent_v2
+DROP TABLE lpb_rcb_revision
+DROP TABLE lpb_rcb_revision_independent
+DROP TABLE lpb_rcb_scan
+DROP TABLE lpb_rcb_scan_markup
+DROP TABLE lpb_rcb_stats
+DROP TABLE lpb_rcb_stats_buttons_clicked
+DROP TABLE lpb_rcb_stats_custom_bypass
+DROP TABLE lpb_rcb_template
+DROP TABLE lpb_rcb_template_translation
+DROP TABLE lpb_real_queue
+DROP TABLE lpb_term_relationships
+DROP TABLE lpb_term_taxonomy
+DROP TABLE lpb_termmeta
+DROP TABLE lpb_terms
+DROP TABLE lpb_usermeta
+DROP TABLE lpb_users
 DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
 	SQL: SHOW PROCEDURE STATUS WHERE db='landingpage'
 TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Deploy/Database/DbCleanup.php[161]
@@ -540,7 +605,7 @@ Auto Commit set to true successfully
 ** DATABASE CHUNK install end
 --------------------------------------
 ERRORS FOUND:	0
-DROPPED TABLES:	0
+DROPPED TABLES:	49
 RENAMED TABLES:	0
 QUERIES RAN:	435
 
@@ -596,8 +661,8 @@ TABLE "lpb_terms"_______________________________________[ROWS:     5]
 TABLE "lpb_usermeta"____________________________________[ROWS:    24]
 TABLE "lpb_users"_______________________________________[ROWS:     1]
 
-INSERT DATA RUNTIME: 1.4308 sec.
-STEP-2 COMPLETE @ 10:36:03 - RUNTIME: 1.4308 sec.
+INSERT DATA RUNTIME: 1.5806 sec.
+STEP-2 COMPLETE @ 12:48:30 - RUNTIME: 1.5806 sec.
 AJAX ACTION [dbinstall] SUCCESS
 -------------------------
 
@@ -617,7 +682,7 @@ CHUNK ACTION: CURRENT [start][][]
 
 ********************************************************************************
 DUPLICATOR LITE: INSTALL-LOG
-STEP-3 START @ 10:36:03
+STEP-3 START @ 12:48:30
 NOTICE: Do NOT post to public sites or forums
 ********************************************************************************
 CHARSET SERVER:	"utf8mb4"
@@ -880,7 +945,7 @@ EVALUATE TABLE: "lpb_users"_______________________________________[ROWS:     1][
 SCANNED:	Tables:49 	|	 Rows:1534 	|	 Cells:19354 
 UPDATED:	Tables:12 	|	 Rows:34 	|	 Cells:42 
 ERRORS:		0 
-RUNTIME:	0.443100 sec
+RUNTIME:	0.440900 sec
 CHUNK ACTION: CURRENT [rem_maintenance][][]
 
 ====================================
@@ -890,7 +955,6 @@ MAINTENANCE MODE DISABLE
 CHUNK ACTION: CURRENT [config_update][][]
 SET CONFIG FILES
 Retained original entry wpconfig target:/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php
-New htaccess file created:/Applications/XAMPP/xamppfiles/htdocs/landingpage/.htaccess
 
 ====================================
 CONFIGURATION FILE UPDATES
@@ -912,8 +976,6 @@ HTACCESS UPDATE
 ====================================
 
 WEB SERVER CONFIGURATION FILE UPDATED:
-- Preparing .htaccess file with basic setup.
-HTACCESS FILE - Successfully updated the .htaccess file setting.
 
 ====================================
 INDEX.PHP UPDATE
@@ -977,7 +1039,7 @@ CHUNK ACTION: CURRENT [final_report][][]
 FINAL REPORT NOTICES
 ====================================
 
-STEP-3 COMPLETE @ 10:36:04 - RUNTIME: 0.7257 sec. 
+STEP-3 COMPLETE @ 12:48:31 - RUNTIME: 0.7036 sec. 
 
 
 AJAX ACTION [webupdate] SUCCESS
@@ -1000,8 +1062,24 @@ AJAX ACTION [finalafter] SUCCESS
 LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
 
 ====================================
+NEXT STEP NOTICES
+====================================
+-----------------------
+[WARNING] Can't extract files
+	LONG MSG: FILE: .gitignoreMessage: ZipArchive::extractTo(/Applications/XAMPP/xamppfiles/htdocs/landingpage//.gitignore): Failed to open stream: Permission denied
+
+
+====================================
+
+====================================
 FINAL REPORT NOTICES LIST
 ====================================
+-----------------------
+[WARNING] Files not extracted
+	SECTIONS: files
+	LONG MSG: FILE: .gitignoreMessage: ZipArchive::extractTo(/Applications/XAMPP/xamppfiles/htdocs/landingpage//.gitignore): Failed to open stream: Permission denied
+
+
 -----------------------
 [WARNING] PROCEDURE CLEAN ERROR: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
 	SECTIONS: database
@@ -1012,5 +1090,10 @@ FINAL REPORT NOTICES LIST
 	SECTIONS: database
 	LONG MSG: Unable to get list of FUNCTIONS from database "landingpage".
 
+-----------------------
+[NOTICE] Notice: A new .htaccess file was not created
+	SECTIONS: general
+	LONG MSG: Retaining the original .htaccess file from the old site or not creating a new one may cause issues with the initial setup of this site. If you encounter any issues, validate the contents of the .htaccess file or reinstall the site again using the Step 1 ❯ Options ❯ Advanced ❯ Configuration Files ❯ Apache .htaccess ❯ Create New option.  If your site works as expected this message can be ignored.
+
 ====================================
-LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.05906]  MESSAGE:END RENDER PAGE
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.03307]  MESSAGE:END RENDER PAGE

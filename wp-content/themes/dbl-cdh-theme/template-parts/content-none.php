@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found
+ * Template für Es würde nicht gefundet
  *
  * @package dbl-cdh-theme
  */

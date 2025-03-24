@@ -214,3 +214,40 @@ add_action('wp_body_open', 'dbl_cdh_skip_link');
 
 }
 add_action('enqueue_block_assets', 'dbl_cdh_enqueue_bootstrap_in_block_editor');
+
+// Custom Post Types
+function register_kunden_cpt() {
+    $labels = array(
+        'name'               => _x('Kunden', 'post type general name', 'cdh'),
+        'singular_name'      => _x('Kunde', 'post type singular name', 'cdh'),
+        'menu_name'          => _x('Kunden', 'admin menu', 'cdh'),
+        'add_new'            => _x('Neuen Kunden hinzufügen', 'cdh'),
+        'add_new_item'       => __('Neuen Kunden hinzufügen', 'cdh'),
+        'edit_item'          => __('Kunde bearbeiten', 'cdh'),
+        'new_item'           => __('Neuer Kunde', 'cdh'),
+        'view_item'          => __('Kunde ansehen', 'cdh'),
+        'search_items'       => __('Kunden suchen', 'cdh'),
+        'not_found'          => __('Keine Kunden gefunden', 'cdh'),
+        'not_found_in_trash' => __('Keine Kunden im Papierkorb gefunden', 'cdh'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'kunden'),
+        'capability_type'    => 'post',
+        'has_archive'        => false,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'menu_icon'          => 'dashicons-groups',
+        'supports'           => array('title', 'thumbnail'),
+        'show_in_rest'       => true,
+    );
+
+    register_post_type('kunden', $args);
+}
+add_action('init', 'register_kunden_cpt');
