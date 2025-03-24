@@ -252,22 +252,25 @@ function register_kunden_cpt() {
 }
 add_action('init', 'register_kunden_cpt');
 
-add_action('acf/init', 'cdh_register_header_block');
-function cdh_register_header_block(){
-    if(function_exists('acf_register_block_type')){
+add_action('acf/init', 'dbl_register_blocks');
+function dbl_register_blocks() {
+    error_log('✅ Bloque Hero registrado correctamente');
+
+    if (function_exists('acf_register_block_type')) {
         acf_register_block_type(array(
-            'name'              => 'header',
-            'title'             => __('Header', 'cdh'),
-            'description'       => __('Custom Header mit Logo, Navigation und Kontaktbutton.', 'cdh'),
-            'render_template'   => 'acf-blocks/header.php',
+            'name'              => 'hero',
+            'title'             => __('Hero', 'dbl'),
+            'description'       => __('Hero-Bereich mit Headline, Text und Buttons.', 'dbl'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/hero.php',
             'category'          => 'layout',
-            'icon'              => 'menu',
-            'keywords'          => array('header', 'menu', 'navigation'),
+            'icon'              => 'format-image',
+            'keywords'          => array('hero', 'start', 'intro'),
             'mode'              => 'preview',
             'supports'          => array('align' => false)
         ));
     }
 }
+
 
 function dbl_enqueue_assets() {
     wp_enqueue_style('theme-style', get_stylesheet_uri());
