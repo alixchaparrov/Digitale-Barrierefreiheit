@@ -1,61 +1,62 @@
-.hero-section {
-    padding: 4rem 0;
-    background-color: #e20613;
-    color: #fff;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    align-items:center;
-  
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-  
-    .hero-headline {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 1rem;
-    }
-  
-    .hero-text {
-      font-size: 1.125rem;
-      margin-bottom: 2rem;
-    }
-  
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-  
-      a {
-        text-decoration: none;
-        padding: 0.75rem 1.5rem;
-        border: 2px solid #fff;
-        border-radius: 4px;
-        font-weight: 600;
-        color: #fff;
-        transition: all 0.3s ease;
-  
-        &:hover,
-        &:focus {
-          background-color: #fff;
-          color: #e20613;
-          outline: none;
-        }
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .hero-headline {
-        font-size: 1.8rem;
-      }
-  
-      .hero-buttons {
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-    }
+// Hero Block Styles
+.hero-block {
+  position: relative;
+  overflow: hidden;
+
+  .hero-background {
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      width: 100%;
   }
-  
+
+  .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000;
+  }
+
+  .hero-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      color: #fff;
+      padding: 2rem;
+  }
+
+  .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+  }
+
+  .hero-cta .btn {
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+      .hero-background {
+          height: 400px;
+      }
+      
+      .hero-text h1 {
+          font-size: 2rem;
+      }
+      
+      .hero-subtitle {
+          font-size: 1rem;
+      }
+  }
+}
