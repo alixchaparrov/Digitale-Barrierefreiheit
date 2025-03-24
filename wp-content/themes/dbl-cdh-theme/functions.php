@@ -30,7 +30,7 @@ function dbl_cdh_scripts() {
     wp_enqueue_script('dbl-cdh-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery', 'bootstrap'), _S_VERSION, true);
 
     // Barrierefreiheit script
-    wp_enqueue_script( 'dbl-cdh-accesibility', get_template_directory_uri() .  '/assets/js/accesibility.js', array('jquery'), _S_VERSION, true);
+    wp_enqueue_script('dbl-cdh-accesibility', get_template_directory_uri() . '/assets/js/accesibility.js', array('jquery'), _S_VERSION, true);
 
     //Variablen für das Skript zur Barrierefreiheit
     wp_localize_script( 'dbl-cdh-accesibility', 'accesibilityVars', array(
@@ -108,7 +108,7 @@ function dbl_cdh_setup() {
     add_editor_style([
         'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
-        'assets/css/editot-style.css'
+        'assets/css/editor-style.css'
     ]);
 
     // RSS-Feed-Links für Standardbeiträge und -kommentare zum Kopf hinzufügen

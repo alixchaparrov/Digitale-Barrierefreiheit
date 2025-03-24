@@ -26,7 +26,7 @@
 
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Zum Inhalt springen', 'cdh' ); ?></a>
     
-    <?php echo do_shortcode('[newsticker]'); ?>
+    <?php // echo do_shortcode('[newsticker]'); ?>
     
     <div class="is-sticky">
 			<div class="container-xxl container-fluid">
@@ -73,5 +73,6 @@
 						</div>
 					</div>
 				</header><!-- #masthead -->
+                <div id="content" class="site-content">
 			</div>
 		</div>
