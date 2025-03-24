@@ -24,3 +24,5 @@ wp-content/cache/
 # Ignoriere lokal spezifische Konfigurationsdateien für WordPress
 wp-content/object-cache.php
 wp-content/db.php
+.DS_Store
+
