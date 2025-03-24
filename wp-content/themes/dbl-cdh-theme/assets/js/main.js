@@ -1,13 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.hero-buttons a[href^="#"]');
-    links.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.hero-buttons a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   });
-  
+});

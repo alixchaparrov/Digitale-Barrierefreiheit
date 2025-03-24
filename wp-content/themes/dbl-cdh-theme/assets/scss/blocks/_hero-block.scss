@@ -3,6 +3,9 @@
     background-color: #e20613;
     color: #fff;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
   
     .hero-content {
       max-width: 900px;
