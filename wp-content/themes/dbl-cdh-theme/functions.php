@@ -252,24 +252,119 @@ function register_kunden_cpt() {
 }
 add_action('init', 'register_kunden_cpt');
 
-add_action('acf/init', 'dbl_register_blocks');
-function dbl_register_blocks() {
-    error_log('✅ Bloque Hero registrado correctamente');
-
+function register_hero_block() {
     if (function_exists('acf_register_block_type')) {
         acf_register_block_type(array(
             'name'              => 'hero',
-            'title'             => __('Hero', 'dbl'),
-            'description'       => __('Hero-Bereich mit Headline, Text und Buttons.', 'dbl'),
-            'render_template'   => get_template_directory() . '/template-parts/blocks/hero.php',
-            'category'          => 'layout',
+            'title'             => __('Hero', 'cdh-theme'),
+            'description'       => __('Un bloque de héroe accesible con diseño para Barrierefreiheit.', 'cdh-theme'),
+            'render_template'   => 'template-parts/blocks/hero/hero.php',
+            'category'          => 'formatting',
             'icon'              => 'format-image',
-            'keywords'          => array('hero', 'start', 'intro'),
-            'mode'              => 'preview',
-            'supports'          => array('align' => false)
+            'keywords'          => array('hero', 'banner', 'header'),
+            'supports'          => array(
+                'align' => true,
+                'mode' => false,
+                'jsx' => true,
+                'anchor' => true,
+            ),
+            'example'           => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'hero_headline'    => 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.',
+                        'is_preview'       => true
+                    )
+                )
+            ),
         ));
     }
 }
+add_action('acf/init', 'register_hero_block');
+
+/**
+ * Definir los campos ACF para Hero Block
+ */
+function register_hero_acf_fields() {
+    if (function_exists('acf_add_local_field_group')):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_hero_block',
+        'title' => 'Hero Block',
+        'fields' => array(
+            array(
+                'key' => 'field_hero_headline',
+                'label' => 'Headline',
+                'name' => 'hero_headline',
+                'type' => 'text',
+                'instructions' => 'Ingrese el título principal del hero (H1)',
+                'required' => 1,
+                'default_value' => 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.',
+            ),
+            array(
+                'key' => 'field_hero_description',
+                'label' => 'Description',
+                'name' => 'hero_description',
+                'type' => 'textarea',
+                'instructions' => 'Ingrese el subtítulo o descripción corta',
+                'required' => 0,
+                'default_value' => 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.',
+            ),
+            array(
+                'key' => 'field_interest_buttons',
+                'label' => 'Interest Buttons',
+                'name' => 'interest_buttons',
+                'type' => 'repeater',
+                'instructions' => 'Añadir botones de interés',
+                'required' => 0,
+                'collapsed' => 'field_button_text',
+                'min' => 0,
+                'max' => 10,
+                'layout' => 'table',
+                'button_label' => 'Añadir botón',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_button_text',
+                        'label' => 'Texto del botón',
+                        'name' => 'text',
+                        'type' => 'text',
+                        'instructions' => '',
+                        'required' => 1,
+                    ),
+                    array(
+                        'key' => 'field_button_link',
+                        'label' => 'Enlace',
+                        'name' => 'link',
+                        'type' => 'url',
+                        'instructions' => '',
+                        'required' => 1,
+                    ),
+                ),
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'block',
+                    'operator' => '==',
+                    'value' => 'acf/hero',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+
+    endif;
+}
+add_action('acf/init', 'register_hero_acf_fields');
 
 
 function dbl_enqueue_assets() {

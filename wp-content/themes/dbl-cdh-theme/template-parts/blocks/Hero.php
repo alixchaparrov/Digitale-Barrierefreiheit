@@ -21,46 +21,52 @@ if( !empty($block['className']) ) {
 }
 
 // Load values and assign defaults.
-$title = get_field('title') ?: 'Hero Title';
-$subtitle = get_field('subtitle') ?: 'Hero Subtitle';
-$background_image = get_field('background_image');
-$cta_text = get_field('cta_text') ?: 'Learn More';
-$cta_url = get_field('cta_url') ?: '#';
-$overlay_opacity = get_field('overlay_opacity') ?: 70;
-
-// Accessibility enhancements
-$background_alt = !empty($background_image) ? $background_image['alt'] : 'Decorative background image';
-$aria_label = get_field('aria_label') ?: 'Hero section';
+$hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.';
+$hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
+$interest_buttons = get_field('interest_buttons');
+$has_buttons = !empty($interest_buttons);
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" aria-label="<?php echo esc_attr($aria_label); ?>">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" aria-label="<?php _e('Hero Section', 'cdh-theme'); ?>">
     <div class="container-fluid px-0">
         <div class="row g-0">
             <div class="col-12 position-relative">
-                <?php if( $background_image ): ?>
-                    <div class="hero-background" role="img" aria-label="<?php echo esc_attr($background_alt); ?>" style="background-image: url('<?php echo esc_url($background_image['url']); ?>')">
-                        <div class="hero-overlay" style="opacity: <?php echo $overlay_opacity/100; ?>"></div>
-                    </div>
-                <?php endif; ?>
+                <div class="hero-background" role="presentation">
+                    <div class="hero-overlay"></div>
+                </div>
                 
                 <div class="hero-content container">
                     <div class="row">
-                        <div class="col-md-8 col-lg-7 col-xl-6">
+                        <div class="col-md-8 col-lg-7">
                             <div class="hero-text">
-                                <h1><?php echo esc_html($title); ?></h1>
-                                <?php if( $subtitle ): ?>
+                                <?php if($hero_headline): ?>
+                                    <h1><?php echo $hero_headline; ?></h1>
+                                <?php endif; ?>
+                                
+                                <?php if($hero_description): ?>
                                     <div class="hero-subtitle">
-                                        <p><?php echo $subtitle; ?></p>
+                                        <p><?php echo $hero_description; ?></p>
                                     </div>
                                 <?php endif; ?>
                                 
-                                <?php if( $cta_text ): ?>
-                                    <div class="hero-cta">
-                                        <a href="<?php echo esc_url($cta_url); ?>" class="btn btn-primary" aria-label="<?php echo esc_attr($cta_text); ?>">
-                                            <span><?php echo esc_html($cta_text); ?></span>
-                                        </a>
+                                <?php if($has_buttons): ?>
+                                    <div class="interest-buttons">
+                                        <p class="interest-label"><?php _e('Wofür interessieren Sie sich?', 'cdh-theme'); ?></p>
+                                        <div class="button-container">
+                                            <?php foreach($interest_buttons as $button): ?>
+                                                <a href="<?php echo esc_url($button['link']); ?>" class="btn btn-outline-light interest-button" aria-label="<?php echo esc_attr($button['text']); ?>">
+                                                    <?php echo esc_html($button['text']); ?>
+                                                </a>
+                                            <?php endforeach; ?>
+                                        </div>
                                     </div>
                                 <?php endif; ?>
+                                
+                                <div class="hero-cta">
+                                    <a href="#contact" class="btn btn-light" aria-label="<?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>">
+                                        <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
