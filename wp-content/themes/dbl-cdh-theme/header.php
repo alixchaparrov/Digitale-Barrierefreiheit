@@ -73,6 +73,6 @@
 						</div>
 					</div>
 				</header><!-- #masthead -->
-                <div id="content" class="site-content">
 			</div>
 		</div>
+        <div id="content" class="site-content">

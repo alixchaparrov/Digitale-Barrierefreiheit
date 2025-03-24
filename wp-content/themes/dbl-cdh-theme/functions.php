@@ -21,7 +21,7 @@ function dbl_cdh_scripts() {
     wp_enqueue_style('dbl-cdh-style', get_stylesheet_uri(), array('bootstrap'), _S_VERSION);
     
     // Personalisierte styles compiliert SCSS
-    wp_enqueue_style('dbl-cdh-main-styles', get_template_directory_uri()  . '/assets/css/main.css', array('boostrap'),_S_VERSION);
+    wp_enqueue_style('dbl-cdh-main-styles', get_template_directory_uri() . '/assets/css/main.css', array('bootstrap'), _S_VERSION);
     
     // Bootstrap JS desde CDN
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.2', true);
@@ -34,10 +34,10 @@ function dbl_cdh_scripts() {
 
     //Variablen für das Skript zur Barrierefreiheit
     wp_localize_script( 'dbl-cdh-accesibility', 'accesibilityVars', array(
-        'skipLinkText' => __('Zum Inhalt springen', 'dbl-cdh-theme'),
-        'menuToggleText' => __('Menü', 'dbl-cdh-theme'),
-        'menuExpandText' => __('Untermenü anzeigen', 'dbl-cdh-theme'),
-        'menuCollapseText' => __('Untermenü verbergen', 'dbl-cdh-theme'),
+        'skipLinkText' => __('Zum Inhalt springen', 'cdh'),
+        'menuToggleText' => __('Menü', 'cdh'),
+        'menuExpandText' => __('Untermenü anzeigen', 'cdh'),
+        'menuCollapseText' => __('Untermenü verbergen', 'cdh'),
     )); 
 }
 add_action('wp_enqueue_scripts', 'dbl_cdh_scripts');
@@ -58,10 +58,10 @@ function dbl_cdh_setup() {
     // Dieses Thema verwendet wp_nav_menu() an einer Stelle.
     register_nav_menus(
         array(
-            'primary' => esc_html__('Primary', 'dbl-cdh-theme'),
-            'footer' => esc_html__('Footer', 'dbl-cdh-theme'),
-            'social' => esc_html__('Social Media Menu', 'dbl-cdh-theme'),
-            'legal' => esc_html__('Rechtliches', 'dbl-cdh-theme'),
+            'primary' => esc_html__('Primary', 'cdh'),
+            'footer' => esc_html__('Footer', 'cdh'),
+            'social' => esc_html__('Social Media Menu', 'cdh'),
+            'legal' => esc_html__('Rechtliches', 'cdh'),
         )
     );
 
@@ -133,22 +133,22 @@ add_action('after_setup_theme', 'dbl_cdh_setup');
 function dbl_cdh_widgets_init() {
     register_sidebar( 
         array(
-            'name'          => esc_html__( 'Sidebar', 'dbl-cdh-theme'),
-            'id'            => 'sidebar-1',
-            'description'   => esc_html__('Widgets hier hinzufügen.', 'dbl-cdh-theme'),
-            'before_widget' => '<section id="%1$s" class="widget %2$s"',
-            'after_widget'  => '</section>',
-            'before_title'  => '<h2 class="widget-title">',
-            'after_title'   => '</h2>',
+            'name'          => esc_html__('Error 404', 'cdh'),
+            'id'            => 'error404',
+            'description'   => esc_html__('Widgets für 404-Seite', 'cdh'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
         )
     );
     // Footer widgets
     register_sidebar( 
         array(
-            'name'          => esc_html__( 'Footer - Kontakt', 'dbl-cdh-theme'),
+            'name'          => esc_html__( 'Footer - Kontakt', 'cdh'),
             'id'            => 'footer-1',
-            'description'   => esc_html__('Füge Widgets für den Kontaktbereich im Footer hinzu', 'dbl-cdh-theme'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s"',
+            'description'   => esc_html__('Füge Widgets für den Kontaktbereich im Footer hinzu', 'cdh'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
             'after_title'   => '</h3>',
@@ -161,7 +161,7 @@ add_action( 'widgets_init', 'dbl_cdh_widgets_init');
  * Barrierefreie Funktionen
  */
 function dbl_cdh_skip_link() {
-    echo '<a class="skip-link screen-reader-text" href="#primary">' . esc_html__('Zum Inhalt springen', 'dbl-cdh-theme') . '</a>';
+    echo '<a class="skip-link screen-reader-text" href="#primary">' . esc_html__('Zum Inhalt springen', 'cdh') . '</a>';
 }
 add_action('wp_body_open', 'dbl_cdh_skip_link');
 
@@ -177,6 +177,8 @@ add_action('wp_body_open', 'dbl_cdh_skip_link');
     }
     return $atts;
  }
+
+ add_filter('nav_menu_link_attributes', 'dbl_cdh_nav_menu_aria_atributes', 10, 3);
 
  /**
   * Unterstützung für Block- und Stil-Editor
