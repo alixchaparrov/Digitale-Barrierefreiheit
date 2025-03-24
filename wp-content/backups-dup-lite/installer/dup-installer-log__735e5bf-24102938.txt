@@ -1,0 +1,1016 @@
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-0 START @ 10:35:05
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |Darwin
+PHP VERSION_________: 8.1.31                                |8.2.4
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 8.2.4 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1
+DOC ROOT____________: "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+REQUEST URL_________: "http://localhost/landingpage"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[blogname]
+********************************************************************************
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+TEMPLATE____________: "base"
+SECURE MODE_________: "none"
+URL PLUGINS_________: https://lp.agentur-heumann.de/wp-content/plugins
+VALIDATE ON START___: "normal"
+PATH_NEW____________: "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+URL_NEW_____________: "http://localhost/landingpage"
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/20250324_digitalebarrierefreiheitconce_[HASH]_20250324102938_archive.zip"
+ARCHIVE SIZE________: 70.93MB
+CREATED_____________: 2025-03-24 10:29:38
+WP VERSION__________: 6.7.2
+DUP VERSION_________: 1.5.12
+LICENSE_____________: Free version
+DB VERSION__________: 10.6.19
+DB FILE SIZE________: 8.13MB
+DB TABLES___________: 49
+DB ROWS_____________: 1397
+URL HOME____________: https://lp.agentur-heumann.de
+URL CORE____________: https://lp.agentur-heumann.de
+URL CONTENT_________: https://lp.agentur-heumann.de/wp-content
+URL UPLOAD__________: https://lp.agentur-heumann.de/wp-content/uploads
+URL PLUGINS_________: https://lp.agentur-heumann.de/wp-content/plugins
+URL MU PLUGINS______: https://lp.agentur-heumann.de/wp-content/mu-plugins
+URL THEMES__________: https://lp.agentur-heumann.de/wp-content/themes
+PATH HOME___________: /kunden/85548_32457/landingpage-barrierefreiheit
+PATH ABS____________: /kunden/85548_32457/landingpage-barrierefreiheit
+PATH WPCONFIG_______: /kunden/85548_32457/landingpage-barrierefreiheit
+PATH WPCONTENT______: /kunden/85548_32457/landingpage-barrierefreiheit/wp-content
+PATH UPLOADS________: /kunden/85548_32457/landingpage-barrierefreiheit/wp-content/uploads
+PATH PLUGINS________: /kunden/85548_32457/landingpage-barrierefreiheit/wp-content/plugins
+PATH MUPLUGINS______: /kunden/85548_32457/landingpage-barrierefreiheit/wp-content/mu-plugins
+PATH THEMES_________: /kunden/85548_32457/landingpage-barrierefreiheit/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "lp.agentur-heumann.de/"
+
+PLUGINS
+PLUGIN [SLUG:advanced-custom-fields-pro/acf.php                ][ON:true ]  Advanced Custom Fields PRO
+PLUGIN [SLUG:all-in-one-wp-migration/all-in-one-wp-migration.php][ON:true ]  All-in-One WP Migration
+PLUGIN [SLUG:broken-link-checker/broken-link-checker.php       ][ON:true ]  Broken Link Checker
+PLUGIN [SLUG:cdh-funktionen.php_/cdh-funktionen.php            ][ON:true ]  CDH - Benutzerdefinierte Funktionen
+PLUGIN [SLUG:conditional-fields-pro/conditional-fields.php     ][ON:true ]  Conditional Fields PRO
+PLUGIN [SLUG:contact-form-7/wp-contact-form-7.php              ][ON:true ]  Contact Form 7
+PLUGIN [SLUG:duplicator/duplicator.php                         ][ON:true ]  Duplicator
+PLUGIN [SLUG:ewww-image-optimizer/ewww-image-optimizer.php     ][ON:true ]  EWWW Image Optimizer
+PLUGIN [SLUG:fluent-smtp/fluent-smtp.php                       ][ON:true ]  FluentSMTP
+PLUGIN [SLUG:seo-by-rank-math/rank-math.php                    ][ON:true ]  Rank Math SEO
+PLUGIN [SLUG:real-cookie-banner/index.php                      ][ON:true ]  Real Cookie Banner (Free)
+PLUGIN [SLUG:w3-total-cache/w3-total-cache.php                 ][ON:true ]  W3 Total Cache
+PLUGIN [SLUG:advanced-cache.php                                ][ON:false]  advanced-cache.php
+PLUGIN [SLUG:db.php                                            ][ON:false]  db.php
+PLUGIN [SLUG:object-cache.php                                  ][ON:false]  object-cache.php
+
+********************************************************************************
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.11157]  MESSAGE:END RENDER PAGE
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.04253]  MESSAGE:END RENDER PAGE
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Overwrite Install" RESULT: skip
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Recovery Point" RESULT: skip
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Package is Importable" RESULT: skip
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00130]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Package Size" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00042]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+LOG-TIME[DELTA:   0.01352]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00028]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.00987]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.00960]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00009]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00026]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00125]  MESSAGE:TEST "Database Version" RESULT: passed
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00107]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00192]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00261]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+LOG-TIME[DELTA:   0.00331]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SQL: SHOW PROCEDURE STATUS
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.database.service.php[629]
+TRACE[2] CLASS___: DUPX_Validation_database_service->dbHasProcedures FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.database.service.php[481]
+TRACE[3] CLASS___: DUPX_Validation_database_service->dbCheckUserPerms FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/database-tests/class.validation.test.db.user.perms.php[28]
+TRACE[4] CLASS___: DUPX_Validation_test_db_user_perms->runTest FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.abstract.item.php[46]
+TRACE[5] CLASS___: DUPX_Validation_abstract_item->test FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.manager.php[232]
+TRACE[6] CLASS___: DUPX_Validation_manager->runTests FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.manager.php[205]
+TRACE[7] CLASS___: DUPX_Validation_manager->getValidateData FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[173]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
+TRACE[9] CLASS___: DUPX_Ctrl_ajax::controller FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/main.installer.php[60]
+
+DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SQL: SHOW FUNCTION STATUS
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.database.service.php[646]
+TRACE[2] CLASS___: DUPX_Validation_database_service->dbHasFunctions FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.database.service.php[489]
+TRACE[3] CLASS___: DUPX_Validation_database_service->dbCheckUserPerms FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/database-tests/class.validation.test.db.user.perms.php[28]
+TRACE[4] CLASS___: DUPX_Validation_test_db_user_perms->runTest FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.abstract.item.php[46]
+TRACE[5] CLASS___: DUPX_Validation_abstract_item->test FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.manager.php[232]
+TRACE[6] CLASS___: DUPX_Validation_manager->runTests FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/validation/class.validation.manager.php[205]
+TRACE[7] CLASS___: DUPX_Validation_manager->getValidateData FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[173]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
+TRACE[9] CLASS___: DUPX_Ctrl_ajax::controller FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/main.installer.php[60]
+
+LOG-TIME[DELTA:   0.04910]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00037]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00086]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: hard warning
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00030]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: passed
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00011]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-1 START @ 10:35:47
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "Digitale Barrierefreiheit - Concept-Design Heumann"
+HOME URL NEW________: "http://localhost/landingpage"
+SITE URL NEW________: "http://localhost/landingpage"
+CONTENT URL NEW_____: "http://localhost/landingpage/wp-content"
+UPLOAD URL NEW______: "http://localhost/landingpage/wp-content/uploads"
+PLUGINS URL NEW_____: "http://localhost/landingpage/wp-content/plugins"
+MUPLUGINS URL NEW___: "http://localhost/landingpage/wp-content/mu-plugins"
+HOME PATH NEW_______: "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+SITE PATH NEW_______: "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+CONTENT PATH NEW____: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content"
+UPLOAD PATH NEW_____: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/uploads"
+PLUGINS PATH NEW____: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins"
+MUPLUGINS PATH NEW__: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "ziparchivechunking"
+SET DIR PERMS_______: true
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: true
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "new"
+OTHER CONFIG________: "new"
+FILE TIME___________: "current"
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer"
+	FILE: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/20250324_digitalebarrierefreiheitconce_[HASH]_20250324102938_installer-backup.php"
+	FILE: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/20250324_digitalebarrierefreiheitconce_[HASH]_20250324102938_archive.zip"
+	FILE: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/installer.php"
+	FILE: "/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer-bootlog__735e5bf-24102938.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20250324_digitalebarrierefreiheitconce_[HASH]_20250324102938_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP CHUNKING >>> START
+MAINTENANCE MODE ENABLE
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> START
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> END
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+FOLDER PREPARE DONE
+ARCHIVE OFFSET 0
+CHUNK COMPLETE - RUNTIME: 5.0080 sec. - Files processed: 6,908 of 16,308
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 6908
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0085 sec. - Files processed: 12,812 of 16,308
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 12812
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+FILE EXTRACTION: done processing last file in list of 16915
+
+EXTRACTION: ZIP CHUNKING >>> DONE
+
+EXTRACTION COMPLETE @ 10:36:02 - RUNTIME: 16.2013 sec. - Files processed: 16,308 of 16,308
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 lpb_
+
+
+
+********************************************************************************
+* DUPLICATOR LITE: INSTALL-LOG
+* STEP-2 START @ 10:36:02
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "lpb_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: ""
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "lpb_actionscheduler_actions"_____________________[ROWS:       7] [EXTRACT|REPLACE] [INST NAME: lpb_actionscheduler_actions]
+TABLE "lpb_actionscheduler_claims"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_actionscheduler_claims]
+TABLE "lpb_actionscheduler_groups"______________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_actionscheduler_groups]
+TABLE "lpb_actionscheduler_logs"________________________[ROWS:      19] [EXTRACT|REPLACE] [INST NAME: lpb_actionscheduler_logs]
+TABLE "lpb_blc_filters"_________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_blc_filters]
+TABLE "lpb_blc_instances"_______________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: lpb_blc_instances]
+TABLE "lpb_blc_links"___________________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: lpb_blc_links]
+TABLE "lpb_blc_synch"___________________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: lpb_blc_synch]
+TABLE "lpb_commentmeta"_________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_commentmeta]
+TABLE "lpb_comments"____________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_comments]
+TABLE "lpb_duplicator_packages"_________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_duplicator_packages]
+TABLE "lpb_ewwwio_images"_______________________________[ROWS:      11] [EXTRACT|REPLACE] [INST NAME: lpb_ewwwio_images]
+TABLE "lpb_ewwwio_queue"________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_ewwwio_queue]
+TABLE "lpb_fsmpt_email_logs"____________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_fsmpt_email_logs]
+TABLE "lpb_links"_______________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_links]
+TABLE "lpb_options"_____________________________________[ROWS:     650] [EXTRACT|REPLACE] [INST NAME: lpb_options]
+TABLE "lpb_postmeta"____________________________________[ROWS:      46] [EXTRACT|REPLACE] [INST NAME: lpb_postmeta]
+TABLE "lpb_posts"_______________________________________[ROWS:      11] [EXTRACT|REPLACE] [INST NAME: lpb_posts]
+TABLE "lpb_rank_math_404_logs"__________________________[ROWS:      12] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_404_logs]
+TABLE "lpb_rank_math_analytics_gsc"_____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_analytics_gsc]
+TABLE "lpb_rank_math_analytics_inspections"_____________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_analytics_inspections]
+TABLE "lpb_rank_math_analytics_objects"_________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_analytics_objects]
+TABLE "lpb_rank_math_internal_links"____________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_internal_links]
+TABLE "lpb_rank_math_internal_meta"_____________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_internal_meta]
+TABLE "lpb_rank_math_redirections"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_redirections]
+TABLE "lpb_rank_math_redirections_cache"________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rank_math_redirections_cache]
+TABLE "lpb_rcb_asset_seo_redirect"______________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_asset_seo_redirect]
+TABLE "lpb_rcb_blocker_thumbnails"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_blocker_thumbnails]
+TABLE "lpb_rcb_consent_decision"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_consent_decision]
+TABLE "lpb_rcb_consent_ip"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_consent_ip]
+TABLE "lpb_rcb_consent_tcf_string"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_consent_tcf_string]
+TABLE "lpb_rcb_consent_url"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_consent_url]
+TABLE "lpb_rcb_consent_v2"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_consent_v2]
+TABLE "lpb_rcb_revision"________________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_revision]
+TABLE "lpb_rcb_revision_independent"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_revision_independent]
+TABLE "lpb_rcb_scan"____________________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_scan]
+TABLE "lpb_rcb_scan_markup"_____________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_scan_markup]
+TABLE "lpb_rcb_stats"___________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_stats]
+TABLE "lpb_rcb_stats_buttons_clicked"___________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_stats_buttons_clicked]
+TABLE "lpb_rcb_stats_custom_bypass"_____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_stats_custom_bypass]
+TABLE "lpb_rcb_template"________________________________[ROWS:     648] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_template]
+TABLE "lpb_rcb_template_translation"____________________[ROWS:     123] [EXTRACT|REPLACE] [INST NAME: lpb_rcb_template_translation]
+TABLE "lpb_real_queue"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: lpb_real_queue]
+TABLE "lpb_termmeta"____________________________________[ROWS:       9] [EXTRACT|REPLACE] [INST NAME: lpb_termmeta]
+TABLE "lpb_terms"_______________________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: lpb_terms]
+TABLE "lpb_term_relationships"__________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: lpb_term_relationships]
+TABLE "lpb_term_taxonomy"_______________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: lpb_term_taxonomy]
+TABLE "lpb_usermeta"____________________________________[ROWS:      24] [EXTRACT|REPLACE] [INST NAME: lpb_usermeta]
+TABLE "lpb_users"_______________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: lpb_users]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.4.28 -- Build Server: 10.6.19
+FILE SIZE:	dup-database__[HASH].sql (3.79MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE-GLOBAL:	STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+DROP ALL TABLES
+DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SQL: SHOW PROCEDURE STATUS WHERE db='landingpage'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Deploy/Database/DbCleanup.php[161]
+TRACE[2] CLASS___: Duplicator\Installer\Core\Deploy\Database\DbCleanup::dropProcs FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[583]
+TRACE[3] CLASS___: DUPX_DBInstall->dbActionEmpty FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[548]
+TRACE[4] CLASS___: DUPX_DBInstall->prepareDB  FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[206]
+TRACE[5] CLASS___: DUPX_DBInstall->deploy     FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[217]
+TRACE[6] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::controller FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/main.installer.php[60]
+
+PROCEDURE CLEAN ERROR: Could not get list of PROCEDURES to drop them.
+DB QUERY [ERROR][/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/classes/database/class.db.php:645] MSG: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SQL: SHOW FUNCTION STATUS WHERE db='landingpage'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Deploy/Database/DbCleanup.php[223]
+TRACE[2] CLASS___: Duplicator\Installer\Core\Deploy\Database\DbCleanup::dropFuncs FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[584]
+TRACE[3] CLASS___: DUPX_DBInstall->dbActionEmpty FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[548]
+TRACE[4] CLASS___: DUPX_DBInstall->prepareDB  FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.dbinstall.php[206]
+TRACE[5] CLASS___: DUPX_DBInstall->deploy     FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[217]
+TRACE[6] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::controller FILE: /Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/main.installer.php[60]
+
+FUNCTION CLEAN ERROR: Could not get list of FUNCTIONS to drop them.
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+GLOBAL RULES ADDED: INVALID CHARSETS
+GLOBAL RULES ADDED: INVALID COLLATIONS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`root`@`localhost`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+	SEARCH  => /(^.*(?:CHARSET|CHARACTER SET)\s*[\s=]\s*[`'"]?)((?:utf8mb3))([`'"]?\s.*COLLATE\s*[\s=]\s*[`'"]?)([^`'"\s;,]+)([`'"]?.*$)/m
+	REPLACE => $1utf8mb4$3utf8mb4_general_ci$5
+
+	SEARCH  => /(^.*COLLATE\s*[\s=]\s*[`'"]?)([^`'"\s;,]+)([`'"]?\s.*(?:CHARSET|CHARACTER SET)\s*[\s=]\s*[`'"]?)((?:utf8mb3))([`'"]?[\s;,].*$)/m
+	REPLACE => $1utf8mb4_general_ci$3utf8mb4$5
+
+	SEARCH  => /(^.*(?:CHARSET|CHARACTER SET)\s*[\s=]\s*[`'"]?)((?:utf8mb3))([`'"]?[\s;,].*$)/m
+	REPLACE => $1utf8mb4$3
+
+	SEARCH  => /(^.*(?:CHARSET|CHARACTER SET)\s*[\s=]\s*[`'"]?)([^`'"\s;,]+)([`'"]?\s.*COLLATE\s*[\s=]\s*[`'"]?)((?:utf8mb3_bin|utf8mb3_general_ci))([`'"]?[\s;,].*$)/m
+	REPLACE => $1utf8mb4$3utf8mb4_general_ci$5
+
+	SEARCH  => /(^.*COLLATE\s*[\s=]\s*[`'"]?)((?:utf8mb3_bin|utf8mb3_general_ci))([`'"]?\s.*(?:CHARSET|CHARACTER SET)\s*[\s=]\s*[`'"]?)([^`'"\s;,]+)([`'"]?.*$)/m
+	REPLACE => $1utf8mb4_general_ci$3utf8mb4$5
+
+	SEARCH  => /(^.*COLLATE\s*[\s=]\s*[`'"]?)((?:utf8mb3_bin|utf8mb3_general_ci))([`'"]?[\s;,].*$)/m
+	REPLACE => $1utf8mb4_general_ci$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+DATABASE CHUNK SEEK POSITION: 0
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+Auto Commit set to true successfully
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	435
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "lpb_actionscheduler_actions"_____________________[ROWS:     7]
+TABLE "lpb_actionscheduler_claims"______________________[ROWS:     0]
+TABLE "lpb_actionscheduler_groups"______________________[ROWS:     2]
+TABLE "lpb_actionscheduler_logs"________________________[ROWS:    19]
+TABLE "lpb_blc_filters"_________________________________[ROWS:     0]
+TABLE "lpb_blc_instances"_______________________________[ROWS:     3]
+TABLE "lpb_blc_links"___________________________________[ROWS:     3]
+TABLE "lpb_blc_synch"___________________________________[ROWS:     3]
+TABLE "lpb_commentmeta"_________________________________[ROWS:     0]
+TABLE "lpb_comments"____________________________________[ROWS:     1]
+TABLE "lpb_duplicator_packages"_________________________[ROWS:     1]
+TABLE "lpb_ewwwio_images"_______________________________[ROWS:    11]
+TABLE "lpb_ewwwio_queue"________________________________[ROWS:     0]
+TABLE "lpb_fsmpt_email_logs"____________________________[ROWS:     2]
+TABLE "lpb_links"_______________________________________[ROWS:     0]
+TABLE "lpb_options"_____________________________________[ROWS:   650]
+TABLE "lpb_postmeta"____________________________________[ROWS:    46]
+TABLE "lpb_posts"_______________________________________[ROWS:    11]
+TABLE "lpb_rank_math_404_logs"__________________________[ROWS:    12]
+TABLE "lpb_rank_math_analytics_gsc"_____________________[ROWS:     0]
+TABLE "lpb_rank_math_analytics_inspections"_____________[ROWS:     0]
+TABLE "lpb_rank_math_analytics_objects"_________________[ROWS:     2]
+TABLE "lpb_rank_math_internal_links"____________________[ROWS:     1]
+TABLE "lpb_rank_math_internal_meta"_____________________[ROWS:     2]
+TABLE "lpb_rank_math_redirections"______________________[ROWS:     0]
+TABLE "lpb_rank_math_redirections_cache"________________[ROWS:     0]
+TABLE "lpb_rcb_asset_seo_redirect"______________________[ROWS:     1]
+TABLE "lpb_rcb_blocker_thumbnails"______________________[ROWS:     0]
+TABLE "lpb_rcb_consent_decision"________________________[ROWS:     0]
+TABLE "lpb_rcb_consent_ip"______________________________[ROWS:     0]
+TABLE "lpb_rcb_consent_tcf_string"______________________[ROWS:     0]
+TABLE "lpb_rcb_consent_url"_____________________________[ROWS:     0]
+TABLE "lpb_rcb_consent_v2"______________________________[ROWS:     0]
+TABLE "lpb_rcb_revision"________________________________[ROWS:     2]
+TABLE "lpb_rcb_revision_independent"____________________[ROWS:     0]
+TABLE "lpb_rcb_scan"____________________________________[ROWS:     3]
+TABLE "lpb_rcb_scan_markup"_____________________________[ROWS:     1]
+TABLE "lpb_rcb_stats"___________________________________[ROWS:     0]
+TABLE "lpb_rcb_stats_buttons_clicked"___________________[ROWS:     0]
+TABLE "lpb_rcb_stats_custom_bypass"_____________________[ROWS:     0]
+TABLE "lpb_rcb_template"________________________________[ROWS:   648]
+TABLE "lpb_rcb_template_translation"____________________[ROWS:   123]
+TABLE "lpb_real_queue"__________________________________[ROWS:     0]
+TABLE "lpb_term_relationships"__________________________[ROWS:     2]
+TABLE "lpb_term_taxonomy"_______________________________[ROWS:     5]
+TABLE "lpb_termmeta"____________________________________[ROWS:     9]
+TABLE "lpb_terms"_______________________________________[ROWS:     5]
+TABLE "lpb_usermeta"____________________________________[ROWS:    24]
+TABLE "lpb_users"_______________________________________[ROWS:     1]
+
+INSERT DATA RUNTIME: 1.4308 sec.
+STEP-2 COMPLETE @ 10:36:03 - RUNTIME: 1.4308 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+SEARCH ITEM[T:path |P:12] SEARCH: /kunden/85548_32457/landingpage-barrierefreiheit REPLACE: /Applications/XAMPP/xamppfiles/htdocs/landingpage [SCOPE: ALL]
+SEARCH ITEM[T:urlnd|P:12] SEARCH: https://lp.agentur-heumann.de REPLACE: http://localhost/landingpage [SCOPE: ALL]
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR LITE: INSTALL-LOG
+STEP-3 START @ 10:36:03
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 60], [inWpConfig = ]
+WP_POST_REVISIONS_____: [value = 1], [inWpConfig = ]
+FORCE_SSL_ADMIN_______: [value = 1], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = 1], [inWpConfig = 1]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = ]
+WP_DEBUG_DISPLAY______: [value = 1], [inWpConfig = ]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = ]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = ]
+SAVEQUERIES___________: [value = ], [inWpConfig = ]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 256M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 256M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000
+throttling____________: 2
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+[PHP ERR][E_WARNING] MSG:foreach() argument must be of type array|object, string given [CODE:2|FILE:/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Deploy/Database/DbCleanup.php|LINE:95]
+CLEAN OPTIONS [lpb_options]
+	`option_name` = "duplicator_plugin_data_stats"
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+DATABASE OPTIONS DELETED [ROWS:    61]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "lpb_actionscheduler_actions"_____________________[ROWS:     7][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_actionscheduler_actions][0]
+
+EVALUATE TABLE: "lpb_actionscheduler_claims"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_actionscheduler_groups"______________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_actionscheduler_groups][0]
+
+EVALUATE TABLE: "lpb_actionscheduler_logs"________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_actionscheduler_logs][0]
+
+EVALUATE TABLE: "lpb_blc_filters"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_blc_instances"_______________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_blc_instances][0]
+
+EVALUATE TABLE: "lpb_blc_links"___________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_blc_links][0]
+
+EVALUATE TABLE: "lpb_blc_synch"___________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_blc_synch][0]
+
+EVALUATE TABLE: "lpb_commentmeta"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_comments"____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_comments][0]
+
+EVALUATE TABLE: "lpb_duplicator_packages"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_ewwwio_images"_______________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_ewwwio_images][0]
+
+EVALUATE TABLE: "lpb_ewwwio_queue"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_fsmpt_email_logs"____________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_fsmpt_email_logs][0]
+
+EVALUATE TABLE: "lpb_links"_______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_options"_____________________________________[ROWS:   589][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_options][0]
+
+EVALUATE TABLE: "lpb_postmeta"____________________________________[ROWS:    46][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_postmeta][0]
+
+EVALUATE TABLE: "lpb_posts"_______________________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_posts][0]
+
+EVALUATE TABLE: "lpb_rank_math_404_logs"__________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rank_math_404_logs][0]
+
+EVALUATE TABLE: "lpb_rank_math_analytics_gsc"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rank_math_analytics_inspections"_____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rank_math_analytics_objects"_________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rank_math_analytics_objects][0]
+
+EVALUATE TABLE: "lpb_rank_math_internal_links"____________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rank_math_internal_links][0]
+
+EVALUATE TABLE: "lpb_rank_math_internal_meta"_____________________[ROWS:     2][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rank_math_redirections"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rank_math_redirections_cache"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_asset_seo_redirect"______________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_asset_seo_redirect][0]
+
+EVALUATE TABLE: "lpb_rcb_blocker_thumbnails"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_consent_decision"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_consent_ip"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_consent_tcf_string"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_consent_url"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_consent_v2"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_revision"________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_revision][0]
+
+EVALUATE TABLE: "lpb_rcb_revision_independent"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_scan"____________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_scan][0]
+
+EVALUATE TABLE: "lpb_rcb_scan_markup"_____________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_scan_markup][0]
+
+EVALUATE TABLE: "lpb_rcb_stats"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_stats_buttons_clicked"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_stats_custom_bypass"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_rcb_template"________________________________[ROWS:   648][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_template][0]
+
+EVALUATE TABLE: "lpb_rcb_template_translation"____________________[ROWS:   123][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_rcb_template_translation][0]
+
+EVALUATE TABLE: "lpb_real_queue"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_termmeta"____________________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_termmeta][0]
+
+EVALUATE TABLE: "lpb_terms"_______________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_terms][0]
+
+EVALUATE TABLE: "lpb_term_relationships"__________________________[ROWS:     2][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "lpb_term_taxonomy"_______________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_term_taxonomy][0]
+
+EVALUATE TABLE: "lpb_usermeta"____________________________________[ROWS:    24][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_usermeta][0]
+
+EVALUATE TABLE: "lpb_users"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/kunden/85548_32457/landingpage-barrierefreiheit" => "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+	SEARCH[urlnd]  2:"https://lp.agentur-heumann.de" ===================> "http://localhost/landingpage"
+	CHUNK ACTION: CURRENT [search_replace][lpb_users][0]
+--------------------------------------
+SCANNED:	Tables:49 	|	 Rows:1534 	|	 Cells:19354 
+UPDATED:	Tables:12 	|	 Rows:34 	|	 Cells:42 
+ERRORS:		0 
+RUNTIME:	0.443100 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:/Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php
+New htaccess file created:/Applications/XAMPP/xamppfiles/htdocs/landingpage/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "__DIR__ . '/'"
+	UPDATE DB_NAME ""landingpage""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE ""
+	WP CONFIG UPDATE WP_CACHE "true"
+	WP CONFIG UPDATE WP_DEBUG "false"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+- Preparing .htaccess file with basic setup.
+HTACCESS FILE - Successfully updated the .htaccess file setting.
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "__DIR__ . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+
+*** SET FOLDER PERMISSION AFTER EXTRACTION
+--------------------------------------
+PATHS MAPPING : "/Applications/XAMPP/xamppfiles/htdocs/landingpage"
+--------------------------------------
+[PHP ERR][E_WARNING] MSG:chmod(): Operation not permitted [CODE:2|FILE:/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/libs/Snap/SnapIO.php|LINE:835]
+CHMOD FAIL: /Applications/XAMPP/xamppfiles/htdocs/landingpage/ PERMS: 0755
+SET FOLDER PERMISSION DONE
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 10:36:04 - RUNTIME: 0.7257 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[WARNING] PROCEDURE CLEAN ERROR: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SECTIONS: database
+	LONG MSG: Unable to get list of PROCEDURES from database "landingpage".
+
+-----------------------
+[WARNING] FUNCTION CLEAN ERROR: Column count of mysql.proc is wrong. Expected 21, found 20. Created with MariaDB 100108, now running 100428. Please use mysql_upgrade to fix this error
+	SECTIONS: database
+	LONG MSG: Unable to get list of FUNCTIONS from database "landingpage".
+
+====================================
+LOG-TIME[/Applications/XAMPP/xamppfiles/htdocs/landingpage/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.05906]  MESSAGE:END RENDER PAGE
