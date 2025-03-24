@@ -251,3 +251,26 @@ function register_kunden_cpt() {
     register_post_type('kunden', $args);
 }
 add_action('init', 'register_kunden_cpt');
+
+add_action('acf/init', 'cdh_register_header_block');
+function cdh_register_header_block(){
+    if(function_exists('acf_register_block_type')){
+        acf_register_block_type(array(
+            'name'              => 'header',
+            'title'             => __('Header', 'cdh'),
+            'description'       => __('Custom Header mit Logo, Navigation und Kontaktbutton.', 'cdh'),
+            'render_template'   => 'acf-blocks/header.php',
+            'category'          => 'layout',
+            'icon'              => 'menu',
+            'keywords'          => array('header', 'menu', 'navigation'),
+            'mode'              => 'preview',
+            'supports'          => array('align' => false)
+        ));
+    }
+}
+
+function dbl_enqueue_assets() {
+    wp_enqueue_style('theme-style', get_stylesheet_uri());
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'dbl_enqueue_assets');
