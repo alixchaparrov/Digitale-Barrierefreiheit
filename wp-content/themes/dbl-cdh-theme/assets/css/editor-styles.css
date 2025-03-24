@@ -1,0 +1,212 @@
+/**
+ * Stile für den WordPress-Editor - Menü und Sidebar
+ * Mobile-first Ansatz mit responsiven Breakpoints
+ */
+
+/* ----- MOBILE VERSION (Basis) ----- */
+
+/* Menüs - Mobile Standardversion */
+.editor-styles-wrapper .menu-primary-container,
+.editor-styles-wrapper .menu-footer-container,
+.editor-styles-wrapper .menu-social-container,
+.editor-styles-wrapper .menu-legal-container {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Mobiles Menü - Hamburger-Stil */
+.editor-styles-wrapper .mobile-menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: #151b35;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.editor-styles-wrapper .menu-primary-container {
+  display: none; /* Im mobilen Zustand versteckt */
+}
+
+.editor-styles-wrapper .menu-primary-container.mobile-open {
+  display: block;
+}
+
+.editor-styles-wrapper .menu-primary-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.editor-styles-wrapper .menu-primary-container ul li {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.editor-styles-wrapper .menu-primary-container ul li:last-child {
+  border-bottom: none;
+}
+
+.editor-styles-wrapper .menu-primary-container ul li a {
+  color: #151b35;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 0;
+  display: block;
+  font-size: 1.1rem;
+}
+
+/* Mobile Sidebar */
+.editor-styles-wrapper .widget-area {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+}
+
+.editor-styles-wrapper .widget-title {
+  color: #182A4C;
+  border-bottom: 2px solid #E50046;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.editor-styles-wrapper .widget {
+  margin-bottom: 1.5rem;
+}
+
+.editor-styles-wrapper .widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.editor-styles-wrapper .widget ul li {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* ----- TABLET VERSION ----- */
+@media screen and (min-width: 768px) {
+  /* Tablet Menü */
+  .editor-styles-wrapper .mobile-menu-toggle {
+    display: none; /* Auf Tablets nicht mehr anzeigen */
+  }
+  
+  .editor-styles-wrapper .menu-primary-container {
+    display: block; /* Immer anzeigen auf Tablet */
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul li {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul li a {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  /* Tablet Sidebar */
+  .editor-styles-wrapper .widget-title {
+    font-size: 1.2rem;
+  }
+  
+  .editor-styles-wrapper .widget-area {
+    padding: 1.25rem;
+  }
+}
+
+/* ----- DESKTOP VERSION ----- */
+@media screen and (min-width: 992px) {
+  /* Desktop Menü */
+  .editor-styles-wrapper .menu-primary-container ul {
+    justify-content: flex-end;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul li {
+    position: relative;
+  }
+  
+  /* Submenu-Indicator für Desktop */
+  .editor-styles-wrapper .menu-primary-container ul li.menu-item-has-children > a::after {
+    content: '▼';
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    vertical-align: middle;
+  }
+  
+  /* Untermenüs für Desktop */
+  .editor-styles-wrapper .menu-primary-container ul li:hover > ul,
+  .editor-styles-wrapper .menu-primary-container ul li:focus-within > ul {
+    display: block;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 100;
+    flex-direction: column;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul ul li {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  
+  /* Desktop Sidebar */
+  .editor-styles-wrapper .widget-area {
+    padding: 1.5rem;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .editor-styles-wrapper .widget-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Widget-Hover-Effekte im Desktop */
+  .editor-styles-wrapper .widget ul li a:hover {
+    color: #E50046;
+    padding-left: 0.25rem;
+    transition: all 0.2s ease;
+  }
+}
+
+/* ----- LARGE DESKTOP VERSION ----- */
+@media screen and (min-width: 1200px) {
+  .editor-styles-wrapper .menu-primary-container ul li {
+    margin-right: 2rem;
+  }
+  
+  .editor-styles-wrapper .menu-primary-container ul li a {
+    font-size: 1.05rem;
+  }
+  
+  .editor-styles-wrapper .widget-area {
+    padding: 1.75rem;
+  }
+}
