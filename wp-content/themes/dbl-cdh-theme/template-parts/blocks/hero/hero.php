@@ -39,7 +39,13 @@ $default_buttons = array(
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" role="region" aria-labelledby="hero-title" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
-    <div class="hero-background"></div>
+<div class="hero-shape" aria-hidden="true">
+<svg viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+  <path d="M0,0 L1440,0 L1440,650 L350,750 L0,650 Z" fill="#E50046" />
+</svg>
+</div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8">
