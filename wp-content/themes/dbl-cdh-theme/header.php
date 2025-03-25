@@ -51,24 +51,20 @@
                                 }
                                 ?>
                                 <?php
-                                wp_nav_menu(
-                                    array(
-                                        'container' => 'nav',
-                                        'container_class' => 'd-none d-xl-block',
-                                        'container_aria_label' => 'Hauptmenü',
-                                        'theme_location' => 'menu-primary',
-                                        'menu_id'        => 'menu-primary',
-                                        'items_wrap' => '<ul id="%1$s" class="%2$s" role="menu">%3$s</ul>',
-                                    )
-                                );
+                               // wp_nav_menu(
+                                 //   array(
+                                  //      'container' => 'nav',
+                                    //    'container_class' => 'd-none d-xl-block',
+                                      //  'container_aria_label' => 'Hauptmenü',
+                                        //'theme_location' => 'menu-primary',
+                                        //'menu_id'        => 'menu-primary',
+                                        //'items_wrap' => '<ul id="%1$s" class="%2$s" role="menu">%3$s</ul>',
+                                   // )
+                                //);
                                 ?>
-                                <nav id="site-d-block d-xl-none" aria-label="Hauptmenü im Vollbild">
-                                    <ul class="fullpagemenu">
-                                         <li class="nav-item openmodal">
-                                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fullpagemenuModal">Alles im Überblick</a>
-                                        </li>
-                                    </ul>
-                                </nav> <!-- #site-navigation -->
+                              <nav id="site-d-block d-xl-none" aria-label="Hauptmenü im Vollbild">
+                                <ul class="fullpagemenu">  </ul></nav>
+
                             </div>
 						</div>
 					</div>

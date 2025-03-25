@@ -2499,7 +2499,7 @@ msgstr ""
 "ändert sich für dich nicht."
 
 #: inc/overrides/pro/settings/CountryBypass.php:146
-#: inc/overrides/pro/settings/TCF.php:140
+#: inc/overrides/pro/settings/TCF.php:136
 msgid "This functionality is currently not available."
 msgstr "Diese Funktionalität ist derzeit nicht verfügbar."
 
@@ -6285,7 +6285,7 @@ msgstr "Das Navigationsmenü konnte nicht gefunden werden."
 msgid "Success message"
 msgstr "Erfolgsmeldung"
 
-#: inc/view/navmenu/NavMenuLinks.php:293
+#: inc/view/navmenu/NavMenuLinks.php:297
 msgid "Add to Menu"
 msgstr "Zum Menü hinzufügen"
 
