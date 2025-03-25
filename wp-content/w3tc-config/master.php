@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.8.6",
+    "version": "2.8.7",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -1049,5 +1049,9 @@
         "engine": "file"
     },
     "extension.imageservice": true,
-    "lazyload_process_background": true
+    "lazyload_process_background": true,
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
+    }
 }

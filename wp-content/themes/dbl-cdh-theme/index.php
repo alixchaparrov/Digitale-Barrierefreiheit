@@ -18,8 +18,10 @@ get_header();
     <?php 
     // Check if this is the homepage
     if (is_front_page()) :
-        // Prioritize landing page template
-        get_template_part('template-parts/content', 'landingpage');
+        while(have_posts()):
+            the_post();
+            the_content();
+        endwhile;
     
     // Check if it's a page
     elseif (is_page()) :
