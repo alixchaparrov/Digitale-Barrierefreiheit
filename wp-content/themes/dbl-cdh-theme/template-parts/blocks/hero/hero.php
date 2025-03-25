@@ -25,58 +25,20 @@ if (!empty($block['className'])) {
 $hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.';
 $hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
 
-//Interst Buttons
+// Botones por defecto
 $default_buttons = array(
-    array(
-        'text' => 'Unterstützung einer Agentur',
-        'link' => '#agentur',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'Prüfung der Website',
-        'link' => '#pruefung',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'barrierefreie Dokumente',
-        'link' => '#dokumente',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'Leichte Sprache',
-        'link' => '#leichtesptache',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'Erklärung zur Barrierefreiheit',
-        'link' => '#erklarung',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'Stadwerke Kunden',
-        'link' => '#stadtwerke',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'BGG vs. BFSG',
-        'link' => '#bgg-bfsg',
-        'disabled' => false
-    ),
-    array(
-        'text' => 'Häufige Fragen',
-        'link' => '#faq',
-        'disabled' => false
-    )
+    array('text' => 'Unterstützung einer Agentur', 'link' => '#agentur', 'disabled' => false),
+    array('text' => 'Prüfung der Website', 'link' => '#pruefung', 'disabled' => false),
+    array('text' => 'barrierefreie Dokumente', 'link' => '#dokumente', 'disabled' => false),
+    array('text' => 'Leichte Sprache', 'link' => '#leichtesprache', 'disabled' => false),
+    array('text' => 'Erklärung zur Barrierefreiheit', 'link' => '#erklarung', 'disabled' => false),
+    array('text' => 'Stadwerke Kunden', 'link' => '#stadtwerke', 'disabled' => false),
+    array('text' => 'BGG vs. BFSG', 'link' => '#bgg-bfsg', 'disabled' => false),
+    array('text' => 'Häufige Fragen', 'link' => '#faq', 'disabled' => false)
 );
-
-// Obtener botones personalizados o usar los predeterminados
-$interest_buttons = get_field('interest_buttons');
-if (empty($interest_buttons)) {
-    $interest_buttons = $default_buttons;
-}
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" role="region" aria-labelledby="hero-title" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
     <div class="hero-background"></div>
     <div class="container">
         <div class="row">
@@ -84,7 +46,7 @@ if (empty($interest_buttons)) {
                 <div class="hero-content">
                     <div class="hero-text">
                         <?php if ($hero_headline): ?>
-                            <h1><?php echo esc_html($hero_headline); ?></h1>
+                            <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
                         <?php endif; ?>
 
                         <?php if ($hero_description): ?>
@@ -100,31 +62,24 @@ if (empty($interest_buttons)) {
                                     <?php while (have_rows('interest_buttons')): the_row();
                                         $text = get_sub_field('button_text');
                                         $link = get_sub_field('button_link');
-                                        $link = is_string($link) ? $link : '';
+                                        $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
                                         $disabled = get_sub_field('disabled');
 
                                         if (!$text || !$link) continue;
-                                        $url = esc_url($link);
                                     ?>
                                         <?php if ($disabled): ?>
                                             <span class="btn btn-outline-light interest-button disabled" aria-disabled="true">
                                                 <?php echo esc_html($text); ?>
                                             </span>
                                         <?php else: ?>
-                                            <a href="<?php echo $url; ?>"
-                                                target="_self"
-                                                class="btn btn-outline-light interest-button"
-                                                aria-label="<?php echo esc_attr($text); ?>">
+                                            <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button" target="_self">
                                                 <?php echo esc_html($text); ?>
                                             </a>
                                         <?php endif; ?>
                                     <?php endwhile; ?>
                                 <?php else: ?>
                                     <?php foreach ($default_buttons as $btn): ?>
-                                        <a href="<?php echo esc_url($btn['link']); ?>"
-                                            target="_self"
-                                            class="btn btn-outline-light interest-button"
-                                            aria-label="<?php echo esc_attr($btn['text']); ?>">
+                                        <a href="<?php echo esc_url($btn['link']); ?>" class="btn btn-outline-light interest-button" target="_self">
                                             <?php echo esc_html($btn['text']); ?>
                                         </a>
                                     <?php endforeach; ?>
