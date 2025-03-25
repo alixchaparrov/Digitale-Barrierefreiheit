@@ -2,21 +2,25 @@
 .hero-block {
   position: relative;
   overflow: hidden;
-  padding: 6rem 0 8rem;
+  padding: 6rem 0 10rem;
   color: #fff;
   min-height: 600px;
+  text-align:center;
 
   .hero-shape {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%; 
     z-index: 1;
   
     .hero-svg {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
       width: 100%;
-      height: auto;
+      height: 100%; 
       display: block;
     }
   }
@@ -24,6 +28,8 @@
   .hero-content {
     position: relative;
     z-index: 2;
+    max-width:650 px;
+    margin: 0 auto;
   }
 
 
@@ -61,6 +67,7 @@
       flex-wrap: wrap;
       gap: 0.75rem;
       margin-bottom: 1.5rem;
+      justify-content: center;
     }
 
     .interest-button {
@@ -142,12 +149,10 @@
       text-align: center;
     }
 
-    .hero-background {
-      top: -120px;
-      left: -100px;
-      width: 1500px;
-      height: 500px;
-      transform: rotate(10deg);
+    .hero-shape { /
+      .hero-svg {
+        transform: scale(1.2); 
+      }
     }
 
     .interest-buttons-section {
