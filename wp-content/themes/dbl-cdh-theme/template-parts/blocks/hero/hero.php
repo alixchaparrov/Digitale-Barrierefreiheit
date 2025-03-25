@@ -77,6 +77,7 @@ if (empty($interest_buttons)) {
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
+    <div class="hero-background"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-xl-8">
