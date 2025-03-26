@@ -51,7 +51,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
   }
 
 
@@ -94,42 +94,46 @@
     .interest-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
       justify-content: flex-start;
-      max-width: 1095px;
+      gap: 0.75rem 1rem;
+      max-width: 950px;
       margin: 0 auto;
-    }
 
-    .interest-button {
-      display: inline-flex;
-      height: 40px;
-      padding: 0 25px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
+      a.interest-button {
+        padding: 0 25px;
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 600;
+        line-height: 22.4px;
+        white-space: nowrap;
+        border-radius: 20px;
+        border: 2px solid #F0F3F6;
+        background: #E50046;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease, outline 0.2s ease;
+      }
 
-      font-size: 16px;
-      font-family: "Noto Sans", sans-serif;
-      font-weight: 600;
-      line-height: 22.4px;
-      word-wrap: break-word;
-
-      border-radius: 20px;
-      border: 2px solid #F0F3F6;
-      background: #E50046;
-      color: #fff;
-      text-decoration: none;
-      transition: background-color 0.3s ease, outline 0.2s ease;
+      a.interest-button:nth-child(4) {
+        margin-left: 0;
+        flex-basis: 100%;
+      }
+    
+      a.interest-button:nth-child(7) {
+        margin-left: 0;
+        flex-basis: 100%;
+      }
 
       &:hover,
       &:focus {
-        background-color:#fff;
+        background-color: #fff;
         color: #E50046;
         outline: 2px solid #F0F3F6;
         outline-offset: -2px;
-        
       }
 
       &:focus-visible {
@@ -150,133 +154,142 @@
         }
       }
     }
-
-    .interest-button-white {
-      background: #fff;
-      color: #E50046;
-      border: 2px solid #fff;
-
-      &:hover,
-      &:focus {
-        background-color: #E50046;
-        color: #fff;
-        outline: 2px solid #fff;
-        outline-offset: -2px;
-      }
-    }
   }
 
-  .hero-cta {
-    margin-top: 2rem;
+  .interest-button-white {
+    background: #fff;
+    color: #E50046;
+    border: 2px solid #fff;
 
-    .btn {
-      padding: 0.75rem 2rem;
-      font-weight: 600;
-      border-radius: 4px;
-      background-color: #fff;
+    &:hover,
+    &:focus {
+      background-color: #E50046;
+      color: #fff;
+      outline: 2px solid #fff;
+      outline-offset: -2px;
+    }
+  }
+}
+
+.hero-cta {
+  margin-top: 2rem;
+
+  .btn {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: #f8f8f8;
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.6);
       color: #333;
       text-decoration: none;
-      display: inline-block;
-      transition: all 0.3s ease;
-
-      &:hover,
-      &:focus {
-        background-color: #f8f8f8;
-        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.6);
-        color: #333;
-        text-decoration: none;
-      }
     }
   }
+}
 
-  @media (max-width: 768px) {
-    .hero-block {
-      padding: 3rem 0;
-      min-height: 950px;
-      overflow: hidden;
-    }
-
-
-    .hero-text h1 {
-      font-size: 36px;
-      text-align: center;
-      padding: 0 1rem;
-      max-width: 95vw;
-    }
-
-    .interest-question {
-      text-align: center;
-      padding: 0 1rem;
-      font-size: 20px;
-      line-height: 1.4;
-      margin: 2.5rem auto 1rem auto;
-    }
-
-    .hero-white-area {
-      text-align: center;
-      padding: 2rem 1rem 1rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1rem;
-      text-align: center;
-      padding: 0 1rem;
-      margin-top: 1.25rem;
-    }
-
-    .hero-content {
-      padding: 0 1rem;
-    }
-
-    .hero-block {
-      overflow-x: hidden;
-      min-height: 950px;
-    }
-
-    .hero-rect-shape {
-      top: -80px;
-      left: -150px;
-      width: 200vw;
-      height: 1100px;
-      transform: rotate(-10deg);
-    }
-
-    .interest-buttons-section {
-      .interest-buttons {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .interest-button {
-        display: block;
-        text-align: center;
-      }
-
-      .hero-cta {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        display: flex;
-        justify-content: center;
-      }
-    }
-
+@media (max-width: 768px) {
+  .hero-block {
+    padding: 3rem 0;
+    min-height: 950px;
+    overflow: hidden;
   }
 
-  @media (max-width: 1024px) and (min-width: 769px) {
-    .hero-text h1 {
-      font-size: 48px;
+
+  .hero-text h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 95vw;
+  }
+
+  .interest-question {
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 2.5rem auto 1rem auto;
+  }
+
+  .hero-white-area {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 1.25rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .hero-block {
+    overflow-x: hidden;
+    min-height: 950px;
+  }
+
+  .hero-rect-shape {
+    top: -80px;
+    left: -150px;
+    width: 200vw;
+    height: 1100px;
+    transform: rotate(-10deg);
+  }
+
+  .interest-buttons-section {
+    .interest-buttons {
+      flex-direction: column;
+      align-items: center;
+
+      a.interest-button {
+        width: 100%;
+        max-width: 300px;
+      }
+      a.interest-button:nth-child(4),
+      a.interest-button:nth-child(7) {
+        flex-basis: auto;
+        margin-left: 0;
+    }
+
+    .interest-button {
+      display: block;
       text-align: center;
     }
 
-    .hero-subtitle {
-      font-size: 1.05rem;
+    .hero-cta {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
     }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-text h1 {
+    font-size: 48px;
+    text-align: center;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      transition: none !important;
-    }
+  .hero-subtitle {
+    font-size: 1.05rem;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
 
 }
