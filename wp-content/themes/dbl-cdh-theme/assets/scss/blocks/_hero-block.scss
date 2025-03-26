@@ -121,13 +121,15 @@
       background: #E50046;
       color: #fff;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, outline 0.2s ease;
 
       &:hover,
       &:focus {
-        background-color: darken(#E50046, 5%);
+        background-color:#fff;
+        color: #E50046;
         outline: 2px solid #F0F3F6;
         outline-offset: -2px;
+        
       }
 
       &:focus-visible {
@@ -156,9 +158,9 @@
 
       &:hover,
       &:focus {
-        background-color: #f8f8f8;
-        color:#E50046;
-        outline: 2px solid #E50046;
+        background-color: #E50046;
+        color: #fff;
+        outline: 2px solid #fff;
         outline-offset: -2px;
       }
     }
@@ -278,5 +280,3 @@
   }
 
 }
-
-
