@@ -15,7 +15,6 @@ if (!empty($block['anchor'])) {
     $id = $block['anchor'];
 }
 
-// Create class attribute allowing for custom "className" and "align" values.
 $className = 'hero-block';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
@@ -25,8 +24,6 @@ if (!empty($block['className'])) {
 $hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.';
 $hero_interest_question = get_field('hero_interest_question') ?: 'Wofür interessieren Sie sich?';
 $hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
-$white_button = get_sub_field('white_button');
-
 
 // Botones por defecto
 $default_buttons = array(
@@ -63,6 +60,7 @@ $default_buttons = array(
                                     $link = get_sub_field('button_link');
                                     $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
                                     $disabled = get_sub_field('disabled');
+                                    $white_button = get_sub_field('white_button');
 
                                     if (!$text || !$link) continue;
                                 ?>
@@ -71,7 +69,6 @@ $default_buttons = array(
                                             <?php echo esc_html($text); ?>
                                         </span>
                                     <?php else: ?>
-                                        <?php $white_button = get_sub_field('white_button'); ?>
                                         <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button <?php echo $white_button ? 'interest-button-white' : ''; ?>" target="_self">
                                             <?php echo esc_html($text); ?>
                                         </a>
@@ -86,6 +83,7 @@ $default_buttons = array(
                             <?php endif; ?>
                         </div>
                     </nav>
+
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
                             <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
@@ -95,7 +93,6 @@ $default_buttons = array(
             </div>
         </div>
     </div>
-
 
     <div class="hero-white-area">
         <div class="container">
