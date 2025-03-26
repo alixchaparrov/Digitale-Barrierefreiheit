@@ -1,4 +1,28 @@
 // _hero-block.scss
+
+.hero-red-area {
+  position: relative;
+  z-index: 2;
+  padding-top: 5rem;
+}
+
+.hero-white-area {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 3;
+  padding-top: 2rem;
+  text-align: left;
+
+  .hero-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+}
+
 .hero-block {
   position: relative;
   overflow: visible;
@@ -27,8 +51,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 5rem;
+    padding-bottom: 3rem;
   }
-  
+
 
   .hero-text {
     h1 {
@@ -43,6 +68,7 @@
       text-align: left;
       font-style: normal;
     }
+
     .interest-question {
       font-family: "Noto Sans", sans-serif;
       font-size: 22px;
@@ -50,21 +76,9 @@
       line-height: 1.4;
       color: #fff;
       max-width: 1095px;
-      padding-left: 0.5rem; 
+      padding-left: 0.5rem;
       margin: 93px auto 1rem auto;
       text-align: left;
-    }
-  }
-  
-
-  .hero-subtitle {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    max-width: 600px;
-
-    p {
-      margin-bottom: 0;
     }
   }
 
@@ -82,35 +96,42 @@
       flex-wrap: wrap;
       gap: 0.75rem;
       margin-bottom: 1.5rem;
-      justify-content: center;
+      justify-content: flex-start;
+      max-width: 1095px;
+      margin: 0 auto;
     }
 
     .interest-button {
-      opacity: 1;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-      border: 1px solid #fff;
-      border-radius: 4px;
+      display: inline-flex;
+      height: 40px;
+      padding: 0 25px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+
+      font-size: 16px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 600;
+      line-height: 22.4px;
+      word-wrap: break-word;
+
+      border-radius: 20px;
+      border: 2px solid #F0F3F6;
+      background: #E50046;
       color: #fff;
       text-decoration: none;
       transition: all 0.3s ease;
-      background-color: transparent;
-      white-space: nowrap;
 
       &:hover,
       &:focus {
-        background-color: rgba(255, 255, 255, 0.2);
-        text-decoration: none;
-        color: #fff;
+        background-color: darken(#E50046, 5%);
+        outline: 2px solid #F0F3F6;
+        outline-offset: -2px;
       }
 
       &:focus-visible {
         box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.6);
-      }
-
-      &:focus {
-        outline: none;
-        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4);
       }
 
       &.disabled {
@@ -125,6 +146,20 @@
           background-color: transparent;
           box-shadow: none;
         }
+      }
+    }
+
+    .interest-button-white {
+      background: #fff;
+      color: #E50046;
+      border: 2px solid #fff;
+
+      &:hover,
+      &:focus {
+        background-color: #f8f8f8;
+        color:#E50046;
+        outline: 2px solid #E50046;
+        outline-offset: -2px;
       }
     }
   }
@@ -153,7 +188,12 @@
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 0;
+    .hero-block {
+      padding: 3rem 0;
+      min-height: 950px;
+      overflow: hidden;
+    }
+
 
     .hero-text h1 {
       font-size: 36px;
@@ -166,18 +206,23 @@
       text-align: center;
       padding: 0 1rem;
       font-size: 20px;
-      line-height: 1.4; 
+      line-height: 1.4;
       margin: 2.5rem auto 1rem auto;
+    }
+
+    .hero-white-area {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
     }
 
     .hero-subtitle {
       font-size: 1rem;
       text-align: center;
       padding: 0 1rem;
-      margin-top: 1,25rem;
+      margin-top: 1.25rem;
     }
 
-    .hero-content{
+    .hero-content {
       padding: 0 1rem;
     }
 
@@ -204,14 +249,15 @@
         display: block;
         text-align: center;
       }
+
+      .hero-cta {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+      }
     }
 
-    .hero-cta {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      display: flex;
-      justify-content: center;
-    }
   }
 
   @media (max-width: 1024px) and (min-width: 769px) {
@@ -232,3 +278,5 @@
   }
 
 }
+
+

@@ -25,6 +25,8 @@ if (!empty($block['className'])) {
 $hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.';
 $hero_interest_question = get_field('hero_interest_question') ?: 'Wofür interessieren Sie sich?';
 $hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
+$white_button = get_sub_field('white_button');
+
 
 // Botones por defecto
 $default_buttons = array(
@@ -40,62 +42,68 @@ $default_buttons = array(
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" role="region" aria-labelledby="hero-title" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
-    <div class="hero-rect-shape" aria-hidden="true"></div>
+    <div class="hero-red-area">
+        <div class="hero-rect-shape" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <?php if ($hero_headline): ?>
+                        <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
+                    <?php endif; ?>
 
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <?php if ($hero_headline): ?>
-                    <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
-                <?php endif; ?>
-                <?php if ($hero_interest_question): ?>
-                    <h4 id="hero-interest-question" class="interest-question"><?php echo esc_html($hero_interest_question); ?></h4>
-                <?php endif; ?>
-                <?php if ($hero_description): ?>
-                    <div class="hero-subtitle">
-                        <p><?php echo esc_html($hero_description); ?></p>
-                    </div>
-                <?php endif; ?>
+                    <?php if ($hero_interest_question): ?>
+                        <h4 id="hero-interest-question" class="interest-question"><?php echo esc_html($hero_interest_question); ?></h4>
+                    <?php endif; ?>
 
-                <!-- NAV con botones de interés -->
-                <nav class="interest-buttons-section" role="navigation" aria-label="<?php _e('Interessen Navigation', 'cdh-theme'); ?>">
-                    <div class="interest-buttons">
-                        <?php if (have_rows('interest_buttons')): ?>
-                            <?php while (have_rows('interest_buttons')): the_row();
-                                $text = get_sub_field('button_text');
-                                $link = get_sub_field('button_link');
-                                $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
-                                $disabled = get_sub_field('disabled');
+                    <nav class="interest-buttons-section" role="navigation" aria-label="<?php _e('Interessen Navigation', 'cdh-theme'); ?>">
+                        <div class="interest-buttons">
+                            <?php if (have_rows('interest_buttons')): ?>
+                                <?php while (have_rows('interest_buttons')): the_row();
+                                    $text = get_sub_field('button_text');
+                                    $link = get_sub_field('button_link');
+                                    $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
+                                    $disabled = get_sub_field('disabled');
 
-                                if (!$text || !$link) continue;
-                            ?>
-                                <?php if ($disabled): ?>
-                                    <span class="btn btn-outline-light interest-button disabled" aria-disabled="true">
-                                        <?php echo esc_html($text); ?>
-                                    </span>
-                                <?php else: ?>
-                                    <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button" target="_self">
-                                        <?php echo esc_html($text); ?>
+                                    if (!$text || !$link) continue;
+                                ?>
+                                    <?php if ($disabled): ?>
+                                        <span class="btn btn-outline-light interest-button disabled" aria-disabled="true">
+                                            <?php echo esc_html($text); ?>
+                                        </span>
+                                    <?php else: ?>
+                                        <?php $white_button = get_sub_field('white_button'); ?>
+                                        <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button <?php echo $white_button ? 'interest-button-white' : ''; ?>" target="_self">
+                                            <?php echo esc_html($text); ?>
+                                        </a>
+                                    <?php endif; ?>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                <?php foreach ($default_buttons as $btn): ?>
+                                    <a href="<?php echo esc_url($btn['link']); ?>" class="btn btn-outline-light interest-button" target="_self">
+                                        <?php echo esc_html($btn['text']); ?>
                                     </a>
-                                <?php endif; ?>
-                            <?php endwhile; ?>
-                        <?php else: ?>
-                            <?php foreach ($default_buttons as $btn): ?>
-                                <a href="<?php echo esc_url($btn['link']); ?>" class="btn btn-outline-light interest-button" target="_self">
-                                    <?php echo esc_html($btn['text']); ?>
-                                </a>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                    </nav>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
+                            <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
+                        </a>
                     </div>
-                </nav>
-
-                <!-- Botón de contacto -->
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
-                        <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
-                    </a>
                 </div>
-            </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero-white-area">
+        <div class="container">
+            <?php if ($hero_description): ?>
+                <div class="hero-subtitle">
+                    <p><?php echo esc_html($hero_description); ?></p>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
