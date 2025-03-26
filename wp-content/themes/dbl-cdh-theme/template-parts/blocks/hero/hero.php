@@ -42,62 +42,57 @@ $default_buttons = array(
     <div class="hero-rect-shape" aria-hidden="true"></div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-xl-8">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <?php if ($hero_headline): ?>
-                            <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
-                        <?php endif; ?>
+        <div class="hero-content">
+            <div class="hero-text">
+                <?php if ($hero_headline): ?>
+                    <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
+                <?php endif; ?>
 
-                        <?php if ($hero_description): ?>
-                            <div class="hero-subtitle">
-                                <p><?php echo esc_html($hero_description); ?></p>
-                            </div>
-                        <?php endif; ?>
+                <?php if ($hero_description): ?>
+                    <div class="hero-subtitle">
+                        <p><?php echo esc_html($hero_description); ?></p>
+                    </div>
+                <?php endif; ?>
 
-                        <!-- NAV con botones de interés -->
-                        <nav class="interest-buttons-section" role="navigation" aria-label="<?php _e('Interessen Navigation', 'cdh-theme'); ?>">
-                            <div class="interest-buttons">
-                                <?php if (have_rows('interest_buttons')): ?>
-                                    <?php while (have_rows('interest_buttons')): the_row();
-                                        $text = get_sub_field('button_text');
-                                        $link = get_sub_field('button_link');
-                                        $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
-                                        $disabled = get_sub_field('disabled');
+                <!-- NAV con botones de interés -->
+                <nav class="interest-buttons-section" role="navigation" aria-label="<?php _e('Interessen Navigation', 'cdh-theme'); ?>">
+                    <div class="interest-buttons">
+                        <?php if (have_rows('interest_buttons')): ?>
+                            <?php while (have_rows('interest_buttons')): the_row();
+                                $text = get_sub_field('button_text');
+                                $link = get_sub_field('button_link');
+                                $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
+                                $disabled = get_sub_field('disabled');
 
-                                        if (!$text || !$link) continue;
-                                    ?>
-                                        <?php if ($disabled): ?>
-                                            <span class="btn btn-outline-light interest-button disabled" aria-disabled="true">
-                                                <?php echo esc_html($text); ?>
-                                            </span>
-                                        <?php else: ?>
-                                            <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button" target="_self">
-                                                <?php echo esc_html($text); ?>
-                                            </a>
-                                        <?php endif; ?>
-                                    <?php endwhile; ?>
+                                if (!$text || !$link) continue;
+                            ?>
+                                <?php if ($disabled): ?>
+                                    <span class="btn btn-outline-light interest-button disabled" aria-disabled="true">
+                                        <?php echo esc_html($text); ?>
+                                    </span>
                                 <?php else: ?>
-                                    <?php foreach ($default_buttons as $btn): ?>
-                                        <a href="<?php echo esc_url($btn['link']); ?>" class="btn btn-outline-light interest-button" target="_self">
-                                            <?php echo esc_html($btn['text']); ?>
-                                        </a>
-                                    <?php endforeach; ?>
+                                    <a href="<?php echo $url; ?>" class="btn btn-outline-light interest-button" target="_self">
+                                        <?php echo esc_html($text); ?>
+                                    </a>
                                 <?php endif; ?>
-                            </div>
-                        </nav>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <?php foreach ($default_buttons as $btn): ?>
+                                <a href="<?php echo esc_url($btn['link']); ?>" class="btn btn-outline-light interest-button" target="_self">
+                                    <?php echo esc_html($btn['text']); ?>
+                                </a>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </nav>
 
-                        <!-- Botón de contacto -->
-                        <div class="hero-cta">
-                            <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
-                                <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
-                            </a>
-                        </div>
-
-                    </div> <!-- .hero-text -->
-                </div> <!-- .hero-content -->
-            </div>
+                <!-- Botón de contacto -->
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
+                        <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
+                    </a>
+                </div>
+            </div> 
         </div>
     </div>
 </section>
