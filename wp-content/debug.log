@@ -286,3 +286,7 @@ Stack trace:
 [26-Mar-2025 08:16:03 UTC] Cron-Unschedule-Event-Fehler für Hook: action_scheduler_run_queue, Fehlercode: could_not_set, Fehlermeldung: Die Cron-Ereignisliste konnte nicht gespeichert werden., Daten: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [26-Mar-2025 08:21:29 UTC] Automatic updates starting...
 [26-Mar-2025 08:21:29 UTC] Automatic updates complete.
+[26-Mar-2025 09:06:05 UTC] Cron-Reschedule-Event-Fehler für Hook: w3tc_imageservice_cron, Fehlercode: could_not_set, Fehlermeldung: Die Cron-Ereignisliste konnte nicht gespeichert werden., Daten: {"schedule":"ten_seconds","args":[],"interval":10}
+[26-Mar-2025 09:27:30 UTC] Cron-Unschedule-Event-Fehler für Hook: w3tc_imageservice_cron, Fehlercode: could_not_set, Fehlermeldung: Die Cron-Ereignisliste konnte nicht gespeichert werden., Daten: {"schedule":"ten_seconds","args":[],"interval":10}
+[26-Mar-2025 09:27:30 UTC] Cron-Reschedule-Event-Fehler für Hook: action_scheduler_run_queue, Fehlercode: could_not_set, Fehlermeldung: Die Cron-Ereignisliste konnte nicht gespeichert werden., Daten: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[26-Mar-2025 09:27:30 UTC] Cron-Unschedule-Event-Fehler für Hook: action_scheduler_run_queue, Fehlercode: could_not_set, Fehlermeldung: Die Cron-Ereignisliste konnte nicht gespeichert werden., Daten: {"schedule":"every_minute","args":["WP Cron"],"interval":60}

@@ -9,8 +9,8 @@
 
   .hero-rect-shape {
     position: absolute;
-    top: -154px;
-    left: -100px;
+    top: -100px;
+    left: -67px;
     width: calc(100vw + 100px);
     height: 1175.988px;
     background-color: #E50046;
@@ -26,8 +26,9 @@
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 5rem;
   }
-
+  
 
   .hero-text {
     h1 {
@@ -41,6 +42,17 @@
       word-wrap: break-word;
       text-align: left;
       font-style: normal;
+    }
+    .interest-question {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #fff;
+      max-width: 1095px;
+      padding-left: 0.5rem; 
+      margin: 93px auto 1rem auto;
+      text-align: left;
     }
   }
   
@@ -150,9 +162,23 @@
       max-width: 95vw;
     }
 
+    .interest-question {
+      text-align: center;
+      padding: 0 1rem;
+      font-size: 20px;
+      line-height: 1.4; 
+      margin: 2.5rem auto 1rem auto;
+    }
+
     .hero-subtitle {
       font-size: 1rem;
       text-align: center;
+      padding: 0 1rem;
+      margin-top: 1,25rem;
+    }
+
+    .hero-content{
+      padding: 0 1rem;
     }
 
     .hero-block {
@@ -161,10 +187,10 @@
     }
 
     .hero-rect-shape {
-      top: -140px;
+      top: -80px;
       left: -150px;
       width: 200vw;
-      height: 1000px;
+      height: 1100px;
       transform: rotate(-10deg);
     }
 

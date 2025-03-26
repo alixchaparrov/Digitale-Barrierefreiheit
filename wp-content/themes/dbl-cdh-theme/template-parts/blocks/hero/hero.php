@@ -23,6 +23,7 @@ if (!empty($block['className'])) {
 
 // Load values and assign defaults.
 $hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger auf dem Weg ihre Website barrierefrei zu machen.';
+$hero_interest_question = get_field('hero_interest_question') ?: 'Wofür interessieren Sie sich?';
 $hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
 
 // Botones por defecto
@@ -47,7 +48,9 @@ $default_buttons = array(
                 <?php if ($hero_headline): ?>
                     <h1 id="hero-title"><?php echo esc_html($hero_headline); ?></h1>
                 <?php endif; ?>
-
+                <?php if ($hero_interest_question): ?>
+                    <h4 id="hero-interest-question" class="interest-question"><?php echo esc_html($hero_interest_question); ?></h4>
+                <?php endif; ?>
                 <?php if ($hero_description): ?>
                     <div class="hero-subtitle">
                         <p><?php echo esc_html($hero_description); ?></p>
