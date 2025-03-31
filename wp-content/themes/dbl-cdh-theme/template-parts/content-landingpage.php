@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the landingpage content.
+ * Template Inhalt Landingpage
  *
  * @package dbl-cdh-theme
  */
@@ -13,7 +13,6 @@ if (have_posts()) {
 }
 ?>
 
-<!-- Secciones de destino para los botones de interés -->
 
 <section id="agentur" aria-label="Unterstützung durch Agentur" class="anchor-section py-5">
     <div class="container">

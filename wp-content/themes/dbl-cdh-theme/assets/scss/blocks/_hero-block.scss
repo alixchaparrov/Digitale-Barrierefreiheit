@@ -1,12 +1,105 @@
+// Variablen
+$primary-color: #E50046;
+$primary-dark: #940025; 
+$white: #fff;
+$black: #000;
+$light-bg: #F0F3F6;
+$focus-outline-color: #2558B6; 
+
+// Hero Block
+.hero-block {
+  position: relative;
+  
+  
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+  }
+  
+  .hero-red-area {
+    background-color: $primary-color;
+    padding: 60px 0 40px;
+    position: relative;
+    color: $white;
+    
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+      padding: 40px 0 30px;
+    }
+  }
+  
+  .hero-white-area {
+    background-color: $white;
+    padding: 30px 0;
+    
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+  }
+  
+  .hero-rect-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    
+    @media screen and (max-width: 992px) {
+      width: 25%;
+    }
+    
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+#hero-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 800px;
+  
+  @media screen and (max-width: 992px) {
+    font-size: 32px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.interest-question {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
 .interest-buttons-section {
   margin-top: 30px;
+  max-width: 1095px;
 }
 
 .interest-buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1095px;
+  width: 100%;
 }
 
 .button-row-1,
@@ -15,16 +108,44 @@
   display: flex;
   gap: 20px;
   width: 100%;
+  
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 }
-
 
 .button-container {
   flex-grow: 1;
   flex-basis: 0;
+  
+  @media screen and (max-width: 992px) {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  
+  @media screen and (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .button-row-3 .button-container {
   max-width: calc((100% - 20px) / 2);
+  
+  @media screen and (max-width: 992px) {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  
+  @media screen and (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .interest-button {
@@ -32,67 +153,119 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40px;
+  height: 48px; 
   padding: 0 20px;
-  border-radius: 20px;
-  border: 2px solid #F0F3F6;
-  background-color: #E50046;
-  color: white;
+  border-radius: 24px;
+  border: 2px solid $white;
+  background-color: $primary-color;
+  color: $white;
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
+  transition: all 0.2s ease;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 
-.interest-button:hover,
-.interest-button:focus {
-  background-color: white;
-  color: #E50046;
-}
-
-
-.interest-button[href*="bgg"] {
-  background-color: #E50046 !important;
-  color: white !important;
-}
-
-.interest-button[href*="bgg"]:hover,
-.interest-button[href*="bgg"]:focus {
-  background-color: white !important;
-  color: #E50046 !important;
-}
-
-
-.interest-button-white {
-  background-color: white !important;
-  color: #E50046 !important;
-  border-color: white !important;
-}
-
-.interest-button-white:hover,
-.interest-button-white:focus {
-  background-color: #E50046 !important;
-  color: white !important;
-}
-
-
-@media (max-width: 992px) {
-  .button-row-1,
-  .button-row-2,
-  .button-row-3 {
-    flex-wrap: wrap;
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $primary-color;
+    text-decoration: none;
   }
   
-  .button-container {
-    flex: 0 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
+  &:focus-visible {
+    outline: 3px solid $focus-outline-color;
+    outline-offset: 2px;
+  }
+  
+  &[aria-pressed="true"] {
+    background-color: $primary-dark;
+    color: $white;
+    border-color: $white;
+  }
+  
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #aaa;
+    color: $white;
   }
 }
 
-@media (max-width: 768px) {
-  .button-container {
-    flex: 0 0 100%;
-    max-width: 100%;
+.interest-button[href*="bgg"] {
+  background-color: $primary-color;
+  color: $white;
+  
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $primary-color;
+  }
+}
+
+.interest-button-white {
+  background-color: $white;
+  color: $primary-color;
+  border-color: $white;
+  
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+.hero-cta {
+  margin-top: 40px;
+  
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+  
+  .btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background-color: $white;
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid $white;
+    
+    &:hover,
+    &:focus {
+      background-color: $primary-color;
+      color: $white;
+    }
+    
+    &:focus-visible {
+      outline: 3px solid $focus-outline-color;
+      outline-offset: 2px;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+}
+
+.hero-subtitle {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  
+  p {
+    margin-bottom: 0;
   }
 }

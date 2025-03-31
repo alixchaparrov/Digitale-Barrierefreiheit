@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Hero Block Template con estructura exacta según diseño Figma.
+ * Hero Block Template 
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -25,29 +25,65 @@ $hero_headline = get_field('hero_headline') ?: 'Wir begleiten Energieversorger a
 $hero_interest_question = get_field('hero_interest_question') ?: 'Wofür interessieren Sie sich?';
 $hero_description = get_field('hero_description') ?: 'Bald muss Ihre Website barrierefrei sein – sind Sie bereit? Die gesetzlichen Anforderungen sind komplex, die Umsetzung oft eine Herausforderung.';
 
-// Botones organizados por filas según diseño Figma
-$button_rows = array(
-    // Primera fila - 3 botones
-    array(
-        array('text' => 'Unterstützung einer Agentur', 'link' => '#agentur', 'disabled' => false),
-        array('text' => 'Prüfung der Website', 'link' => '#pruefung', 'disabled' => false),
-        array('text' => 'barrierefreie Dokumente', 'link' => '#dokumente', 'disabled' => false),
-    ),
-    // Segunda fila - 3 botones
-    array(
-        array('text' => 'Leichte Sprache', 'link' => '#leichtesprache', 'disabled' => false),
-        array('text' => 'Erklärung zur Barrierefreiheit', 'link' => '#erklarung', 'disabled' => false),
-        array('text' => 'Stadwerke Kunden', 'link' => '#stadtwerke', 'disabled' => false),
-    ),
-    // Tercera fila - 2 botones
-    array(
-        array('text' => 'BGG vs. BFSG', 'link' => '#bgg-bfsg', 'disabled' => false),
-        array('text' => 'Häufige Fragen', 'link' => '#faq', 'disabled' => false),
-    ),
-);
+// Buttons
+$default_buttons = [
+
+    [
+        ['text' => 'Unterstützung einer Agentur', 'link' => '#agentur', 'disabled' => false, 'row' => 1],
+        ['text' => 'Prüfung der Website', 'link' => '#pruefung', 'disabled' => false, 'row' => 1],
+        ['text' => 'barrierefreie Dokumente', 'link' => '#dokumente', 'disabled' => false, 'row' => 1],
+    ],
+
+    [
+        ['text' => 'Leichte Sprache', 'link' => '#leichtesprache', 'disabled' => false, 'row' => 2],
+        ['text' => 'Erklärung zur Barrierefreiheit', 'link' => '#erklarung', 'disabled' => false, 'row' => 2],
+        ['text' => 'Stadwerke Kunden', 'link' => '#stadtwerke', 'disabled' => false, 'row' => 2],
+    ],
+
+    [
+        ['text' => 'BGG vs. BFSG', 'link' => '#bgg-bfsg', 'disabled' => false, 'row' => 3],
+        ['text' => 'Häufige Fragen', 'link' => '#faq', 'disabled' => false, 'row' => 3],
+    ],
+];
+
+$custom_buttons = [];
+if (have_rows('interest_buttons')) {
+    while (have_rows('interest_buttons')) {
+        the_row();
+        $row_number = get_sub_field('button_row') ?: 1;
+        $custom_buttons[] = [
+            'text' => get_sub_field('button_text'),
+            'link' => get_sub_field('button_link'),
+            'disabled' => get_sub_field('disabled'),
+            'white_button' => get_sub_field('white_button'),
+            'row' => $row_number
+        ];
+    }
+}
+
+$use_custom_buttons = !empty($custom_buttons);
+$buttons_by_row = [1 => [], 2 => [], 3 => []];
+
+
+if ($use_custom_buttons) {
+    foreach ($custom_buttons as $btn) {
+        if (!empty($btn['text']) && !empty($btn['link'])) {
+            $row = min(max(intval($btn['row']), 1), 3);
+            $buttons_by_row[$row][] = $btn;
+        }
+    }
+} else {
+
+    foreach ($default_buttons as $row_index => $row_buttons) {
+        $row_number = $row_index + 1;
+        foreach ($row_buttons as $btn) {
+            $buttons_by_row[$row_number][] = $btn;
+        }
+    }
+}
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" role="region" aria-labelledby="hero-title" aria-label="<?php _e('Hero Bereich', 'cdh-theme'); ?>">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" aria-labelledby="hero-title">
     <div class="hero-red-area">
         <div class="hero-rect-shape" aria-hidden="true"></div>
         <div class="container">
@@ -61,108 +97,54 @@ $button_rows = array(
                         <h4 id="hero-interest-question" class="interest-question"><?php echo esc_html($hero_interest_question); ?></h4>
                     <?php endif; ?>
 
-                    <nav class="interest-buttons-section" role="navigation" aria-label="<?php _e('Interessen Navigation', 'cdh-theme'); ?>">
+                    <nav class="interest-buttons-section" aria-labelledby="hero-interest-question">
                         <div class="interest-buttons">
-                            <?php
-                            // Verificar si hay botones personalizados
-                            $has_custom_buttons = false;
-                            if (have_rows('interest_buttons')) {
-                                $has_custom_buttons = true;
-                            }
-                            
-                            // Procesar cada fila de botones
-                            foreach ($button_rows as $row_index => $row_buttons): 
-                                $row_number = $row_index + 1;
-                            ?>
-                            <div class="button-row-<?php echo $row_number; ?>">
-                                <?php 
-                                if ($has_custom_buttons) {
-                                    // Reset the counter for each row
-                                    $button_counter = 0;
-                                    
-                                    // Loop through custom buttons
-                                    if (have_rows('interest_buttons')) {
-                                        while (have_rows('interest_buttons')) {
-                                            the_row();
-                                            
-                                            // Only process buttons for the current row
-                                            if ($button_counter < count($row_buttons) * $row_index || 
-                                                $button_counter >= count($row_buttons) * ($row_index + 1)) {
-                                                $button_counter++;
-                                                continue;
-                                            }
-                                            
-                                            $text = get_sub_field('button_text');
-                                            $link = get_sub_field('button_link');
-                                            $url = is_array($link) ? esc_url($link['url'] ?? '') : esc_url($link);
-                                            $disabled = get_sub_field('disabled');
-                                            $white_button = get_sub_field('white_button');
-                                            
-                                            // Prevenir que el botón BGG vs. BFSG sea blanco
-                                            $is_white = $white_button;
-                                            if ($text == 'BGG vs. BFSG') {
+                            <?php for ($row_number = 1; $row_number <= 3; $row_number++): ?>
+                                <?php if (!empty($buttons_by_row[$row_number])): ?>
+                                    <div class="button-row-<?php echo $row_number; ?>">
+                                        <?php foreach ($buttons_by_row[$row_number] as $btn):
+
+                                            $is_white = isset($btn['white_button']) ? $btn['white_button'] : false;
+
+
+                                            if ($btn['text'] === 'BGG vs. BFSG') {
                                                 $is_white = false;
                                             }
-                                            
-                                            if (!$text || !$link) {
-                                                $button_counter++;
-                                                continue;
+
+                                            $url = '';
+                                            if (is_array($btn['link'])) {
+                                                $url = esc_url($btn['link']['url'] ?? '');
+                                            } else {
+                                                $url = esc_url($btn['link']);
                                             }
-                                ?>
-                                    <div class="button-container">
-                                        <?php if ($disabled): ?>
-                                            <span class="interest-button disabled" aria-disabled="true">
-                                                <?php echo esc_html($text); ?>
-                                            </span>
-                                        <?php else: ?>
-                                            <a href="<?php echo $url; ?>" 
-                                               class="interest-button<?php echo $is_white ? ' interest-button-white' : ''; ?>" 
-                                               target="_self" 
-                                               role="button" 
-                                               aria-pressed="false">
-                                                <?php echo esc_html($text); ?>
-                                            </a>
-                                        <?php endif; ?>
+                                        ?>
+                                            <div class="button-container">
+                                                <?php if ($btn['disabled']): ?>
+                                                    <span class="interest-button disabled" aria-disabled="true">
+                                                        <?php echo esc_html($btn['text']); ?>
+                                                    </span>
+                                                <?php else: ?>
+                                                    <a href="<?php echo $url; ?>"
+                                                        class="interest-button<?php echo $is_white ? ' interest-button-white' : ''; ?>"
+                                                        target="_self"
+                                                        role="button"
+                                                        aria-pressed="false"
+                                                        tabindex="0">
+                                                        <?php echo esc_html($btn['text']); ?>
+                                                    </a>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php endforeach; ?>
                                     </div>
-                                <?php
-                                            $button_counter++;
-                                        }
-                                    }
-                                } else {
-                                    // Use default buttons for this row
-                                    foreach ($row_buttons as $btn) {
-                                        // Prevenir que el botón BGG vs. BFSG sea blanco
-                                        $is_white = false;
-                                        if ($btn['text'] === 'Sonstiges') {
-                                            $is_white = true;
-                                        }
-                                ?>
-                                    <div class="button-container">
-                                        <?php if ($btn['disabled']): ?>
-                                            <span class="interest-button disabled" aria-disabled="true">
-                                                <?php echo esc_html($btn['text']); ?>
-                                            </span>
-                                        <?php else: ?>
-                                            <a href="<?php echo esc_url($btn['link']); ?>" 
-                                               class="interest-button<?php echo $is_white ? ' interest-button-white' : ''; ?>" 
-                                               target="_self" 
-                                               role="button" 
-                                               aria-pressed="false">
-                                                <?php echo esc_html($btn['text']); ?>
-                                            </a>
-                                        <?php endif; ?>
-                                    </div>
-                                <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                            <?php endforeach; ?>
+                                <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
                     </nav>
 
                     <div class="hero-cta">
-                        <a href="#contact" class="btn btn-light" aria-label="<?php echo esc_attr(__('Kontakt aufnehmen', 'cdh-theme')); ?>">
+                        <a href="#contact" class="btn btn-light"
+                            aria-label="<?php esc_attr_e('Kontakt aufnehmen', 'cdh-theme'); ?>"
+                            role="button">
                             <?php _e('Kontakt aufnehmen', 'cdh-theme'); ?>
                         </a>
                     </div>
