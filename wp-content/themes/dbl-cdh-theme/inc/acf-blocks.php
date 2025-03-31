@@ -19,7 +19,7 @@ function register_hero_block() {
                 'attributes' => [
                     'mode' => 'preview',
                     'data' => [
-                        'hero_headline' => 'Wir begleiten Energieversorger...',
+                        'hero_headline' => 'Wir begleiten Energieversorger auf dem Weg ihre Webseite barrierefrei zu machen.',
                         'is_preview' => true,
                     ]
                 ]

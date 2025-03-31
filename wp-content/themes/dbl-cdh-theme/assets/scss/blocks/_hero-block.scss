@@ -1,11 +1,7 @@
-/* CSS simple para implementar botones según el diseño Figma */
-
-/* Sección de botones */
 .interest-buttons-section {
   margin-top: 30px;
 }
 
-/* Contenedor de todos los botones */
 .interest-buttons {
   display: flex;
   flex-direction: column;
@@ -13,7 +9,6 @@
   max-width: 1095px;
 }
 
-/* Filas de botones */
 .button-row-1,
 .button-row-2,
 .button-row-3 {
@@ -22,18 +17,16 @@
   width: 100%;
 }
 
-/* Contenedor de cada botón */
+
 .button-container {
   flex-grow: 1;
   flex-basis: 0;
 }
 
-/* Ajuste específico para la tercera fila (solo 2 botones) */
 .button-row-3 .button-container {
   max-width: calc((100% - 20px) / 2);
 }
 
-/* Estilo del botón */
 .interest-button {
   display: flex;
   align-items: center;
@@ -52,14 +45,13 @@
   transition: all 0.3s ease;
 }
 
-/* Estilo hover */
 .interest-button:hover,
 .interest-button:focus {
   background-color: white;
   color: #E50046;
 }
 
-/* Corrección específica para el botón BGG vs. BFSG */
+
 .interest-button[href*="bgg"] {
   background-color: #E50046 !important;
   color: white !important;
@@ -71,7 +63,7 @@
   color: #E50046 !important;
 }
 
-/* Estilo para botón blanco (como Sonstiges) */
+
 .interest-button-white {
   background-color: white !important;
   color: #E50046 !important;
@@ -84,7 +76,7 @@
   color: white !important;
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
   .button-row-1,
   .button-row-2,
