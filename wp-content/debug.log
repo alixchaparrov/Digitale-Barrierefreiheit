@@ -346,3 +346,231 @@ Stack trace:
 [31-Mar-2025 05:47:47 UTC] Automatic updates complete.
 [31-Mar-2025 08:22:15 UTC] Automatic updates starting...
 [31-Mar-2025 08:22:16 UTC] Automatic updates complete.
+[01-Apr-2025 05:50:47 UTC] Automatic updates starting...
+[01-Apr-2025 05:50:49 UTC] Automatic updates complete.
+[01-Apr-2025 07:07:05 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 45
+[01-Apr-2025 07:07:07 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 45
+[01-Apr-2025 07:07:07 UTC] PHP Notice:  Die Funktion _load_textdomain_just_in_time wurde <strong>fehlerhaft</strong> aufgerufen. Das Laden der Übersetzung für die Domain <code>cdh</code> wurde zu früh ausgelöst. Das ist normalerweise ein Hinweis auf Code im Plugin oder Theme, der zu früh läuft. Übersetzungen sollten mit der Aktion <code>init</code> oder später geladen werden. Weitere Informationen: <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress (engl.)</a>. (Diese Meldung wurde in Version 6.7.0 hinzugefügt.) in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/functions.php on line 6114
+[01-Apr-2025 07:07:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-recovery-mode-email-service.php on line 367
+[01-Apr-2025 07:07:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-recovery-mode-email-service.php on line 368
+[01-Apr-2025 07:07:07 UTC] PHP Notice:  Die Funktion _load_textdomain_just_in_time wurde <strong>fehlerhaft</strong> aufgerufen. Das Laden der Übersetzung für die Domain <code>fluent-smtp</code> wurde zu früh ausgelöst. Das ist normalerweise ein Hinweis auf Code im Plugin oder Theme, der zu früh läuft. Übersetzungen sollten mit der Aktion <code>init</code> oder später geladen werden. Weitere Informationen: <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress (engl.)</a>. (Diese Meldung wurde in Version 6.7.0 hinzugefügt.) in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/functions.php on line 6114
+[01-Apr-2025 07:07:12 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 45
+[01-Apr-2025 07:08:13 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 45
+[01-Apr-2025 07:11:18 UTC] PHP Parse error:  syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 50
+[01-Apr-2025 07:12:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function function_exist() in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php:50
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/functions.php(13): require_once()
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(672): include('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#6 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 50
+[01-Apr-2025 07:13:20 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting "(" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 52
+[01-Apr-2025 07:14:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function function_exist() in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php:50
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/functions.php(13): require_once()
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(672): include('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-admin/admin-ajax.php(22): require_once('/Applications/X...')
+#5 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 50
+[01-Apr-2025 07:14:21 UTC] PHP Parse error:  syntax error, unexpected token "=>" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 53
+[01-Apr-2025 07:15:22 UTC] PHP Parse error:  syntax error, unexpected token "=>" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 53
+[01-Apr-2025 07:16:23 UTC] PHP Parse error:  syntax error, unexpected token "=>" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 53
+[01-Apr-2025 07:17:24 UTC] PHP Parse error:  syntax error, unexpected token "=>" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 53
+[01-Apr-2025 07:18:25 UTC] PHP Parse error:  syntax error, unexpected token "=>" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 54
+[01-Apr-2025 07:19:26 UTC] PHP Parse error:  Unclosed '[' on line 55 does not match ')' in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 57
+[01-Apr-2025 07:20:27 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 58
+[01-Apr-2025 07:21:05 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 58
+[01-Apr-2025 07:21:28 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 58
+[01-Apr-2025 07:22:29 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 58
+[01-Apr-2025 07:23:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 62
+[01-Apr-2025 07:24:31 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 62
+[01-Apr-2025 07:25:32 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 62
+[01-Apr-2025 07:26:33 UTC] PHP Parse error:  syntax error, unexpected token "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 62
+[01-Apr-2025 07:27:34 UTC] PHP Parse error:  syntax error, unexpected token "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 63
+[01-Apr-2025 07:28:35 UTC] PHP Parse error:  syntax error, unexpected token "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 63
+[01-Apr-2025 07:29:05 UTC] PHP Parse error:  syntax error, unexpected token "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 63
+[01-Apr-2025 07:29:36 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 65
+[01-Apr-2025 07:30:37 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 65
+[01-Apr-2025 07:31:38 UTC] PHP Parse error:  syntax error, unexpected token "]" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 64
+[01-Apr-2025 07:32:39 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 70
+[01-Apr-2025 07:33:40 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 73
+[01-Apr-2025 07:34:41 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 75
+[01-Apr-2025 07:35:42 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 78
+[01-Apr-2025 07:36:05 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 78
+[01-Apr-2025 07:36:43 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 78
+[01-Apr-2025 07:37:44 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 78
+[01-Apr-2025 07:38:45 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 78
+[01-Apr-2025 07:39:46 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 79
+[01-Apr-2025 07:40:47 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 80
+[01-Apr-2025 07:41:48 UTC] PHP Parse error:  Unclosed '(' on line 55 does not match ']' in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 79
+[01-Apr-2025 07:42:49 UTC] PHP Parse error:  Unclosed '(' on line 55 does not match ']' in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 79
+[01-Apr-2025 07:43:05 UTC] PHP Parse error:  Unclosed '{' on line 50 in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/themes/dbl-cdh-theme/inc/acf-blocks.php on line 87
+[01-Apr-2025 07:44:52 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:45:53 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:46:54 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:46:56 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-admin/admin-ajax.php(22): require_once('/Applications/X...')
+#10 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:46:57 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:47:48 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:47:55 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:47:57 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-admin/admin-ajax.php(22): require_once('/Applications/X...')
+#10 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:48:13 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:48:56 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-blog-header.php(13): require_once('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/landingpage/index.php(17): require('/Applications/X...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 07:48:57 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "register_unterstuetzung_block" not found or invalid function name in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-content/plugins/advanced-custom-fields-pro/acf.php(412): do_action('acf/init', 6)
+#3 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(324): ACF->init('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-settings.php(704): do_action('init')
+#7 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-config.php(108): require_once('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-load.php(50): require_once('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-admin/admin-ajax.php(22): require_once('/Applications/X...')
+#10 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/landingpage/wp-includes/class-wp-hook.php on line 324
+[01-Apr-2025 08:21:45 UTC] Automatic updates starting...
+[01-Apr-2025 08:21:46 UTC] Automatic updates complete.
